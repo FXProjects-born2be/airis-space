@@ -1,7 +1,29 @@
 "use client";
 import React from "react";
-import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+
+// Define animation variants
+const containerVariants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3, // Delay of 0.3 seconds between each child
+    },
+  },
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6, // Animation duration
+      ease: "easeOut", // Smoothing effect
+    },
+  },
+};
 
 const HomeHow = () => {
   return (
@@ -16,14 +38,15 @@ const HomeHow = () => {
           >
             How AIris Works
           </motion.h2>
-          <div className="row">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="col"
-            >
+          {/* Apply stagger animation to the parent row */}
+          <motion.div
+            className="row"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={containerVariants}
+          >
+            <motion.div variants={fadeInUp} className="col">
               <span></span>
               <div>
                 <h3>
@@ -36,13 +59,7 @@ const HomeHow = () => {
                 </p>
               </div>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="col"
-            >
+            <motion.div variants={fadeInUp} className="col">
               <span></span>
               <div>
                 <h3>
@@ -55,13 +72,7 @@ const HomeHow = () => {
                 </p>
               </div>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="col"
-            >
+            <motion.div variants={fadeInUp} className="col">
               <span></span>
               <div>
                 <h3>
@@ -75,13 +86,7 @@ const HomeHow = () => {
                 </p>
               </div>
             </motion.div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="col"
-            >
+            <motion.div variants={fadeInUp} className="col">
               <span></span>
               <div>
                 <h3>
@@ -90,11 +95,11 @@ const HomeHow = () => {
                 </h3>
                 <p>
                   Detailed reports include categorized leads, callback
-                  schedules, and call recordings for Interested prospects
+                  schedules, and call recordings for Interested prospects.
                 </p>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
