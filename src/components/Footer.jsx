@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <Link href="mailto:info@advexio.com">info@advexio.com</Link>
+                  <Link href="mailto:info@advexio.com"></Link>
                 </div>
                 <div>
                   <h4>Phone</h4>

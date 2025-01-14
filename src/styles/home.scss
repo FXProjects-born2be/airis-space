@@ -202,11 +202,29 @@
       border-top: 1px solid #475569;
       border-bottom: 1px solid #475569;
       margin-bottom: rem(32);
+      overflow: hidden;
       @media (max-width: rem(992)) {
         flex-direction: column;
         img {
           height: auto;
           width: 100%;
+        }
+      }
+      .image-wrap {
+        overflow: visible;
+        height: rem(400);
+        display: flex;
+        align-items: center;
+        position: relative;
+        @media (max-width: rem(992)) {
+          height: auto;
+          .image-wrap-inner{
+            transform: unset!important;
+          }
+        }
+        > div {
+          //height: rem(1200);
+          
         }
       }
       .col {

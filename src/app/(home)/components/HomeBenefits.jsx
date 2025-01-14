@@ -1,10 +1,71 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { fadeInUp } from "@/utils/animations";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
+const Row = ({ index, title, description, imageSrc }) => {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 500px", "end start"], // Customize the scroll range
+  });
+
+  // Define the parallax effect range for each row
+  const translateY = useTransform(scrollYProgress, [0, 0.7], ["-110%", "110%"]);
+
+  return (
+    <div ref={containerRef} className="row">
+      <div className="col">
+        <span>{`0${index}`}</span>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="image-wrap">
+        <motion.div
+          className="image-wrap-inner"
+          style={{ y: translateY }} // Bind scroll-based animation
+        >
+          <Image alt={`benefit${index}`} src={imageSrc} width={770} height={368} />
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
 const HomeBenefits = () => {
+  const benefits = [
+    {
+      index: 1,
+      title: "Work More Efficiently",
+      description:
+        "Handle more calls and leads with fewer people. AIris manages repetitive tasks, so your team can focus on high-value work.",
+      imageSrc: "/images/home/benefit1.png",
+    },
+    {
+      index: 2,
+      title: "Save Money",
+      description:
+        "Reduce staffing costs—AIris automates calling and lead management, cutting expenses while strengthening engagement.",
+      imageSrc: "/images/home/benefit2.png",
+    },
+    {
+      index: 3,
+      title: "Increase Productivity",
+      description:
+        "AIris filters out unqualified leads, letting your team focus on prospects ready to buy and boosting conversion rates and success.",
+      imageSrc: "/images/home/benefit3.png",
+    },
+    {
+      index: 4,
+      title: "Generate Leads Continuously",
+      description:
+        "AIris runs around the clock to deliver a constant stream of qualified leads, so the team has new opportunities to follow up on.",
+      imageSrc: "/images/home/benefit4.png",
+    },
+  ];
+
   return (
     <section className="home-benefits">
       <img src="/images/home/ellipse2.png" />
@@ -19,96 +80,15 @@ const HomeBenefits = () => {
           >
             Our Benefits
           </motion.h2>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="row"
-          >
-            <div className="col">
-              <span>01</span>
-              <h3>Work More Efficiently</h3>
-              <p>
-                Handle more calls and leads with fewer people. AIris manages
-                repetitive tasks, so your team can focus on high-value work.
-              </p>
-            </div>
-            <Image
-              alt="benefit1"
-              src={"/images/home/benefit1.png"}
-              width={770}
-              height={368}
+          {benefits.map((benefit) => (
+            <Row
+              key={benefit.index}
+              index={benefit.index}
+              title={benefit.title}
+              description={benefit.description}
+              imageSrc={benefit.imageSrc}
             />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="row"
-          >
-            <div className="col">
-              <span>02</span>
-              <h3>Save Money</h3>
-              <p>
-                Reduce staffing costs—AIris automates calling and lead
-                management, cutting expenses while strengthening engagement.
-              </p>
-            </div>
-            <Image
-              alt="benefit2"
-              src={"/images/home/benefit2.png"}
-              width={770}
-              height={368}
-            />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="row"
-          >
-            <div className="col">
-              <span>03</span>
-              <h3>Increase Productivity</h3>
-              <p>
-                AIris filters out unqualified leads, letting your team focus on
-                prospects ready to buy and boosting conversion rates and
-                success.
-              </p>
-            </div>
-            <Image
-              alt="benefit3"
-              src={"/images/home/benefit3.png"}
-              width={770}
-              height={368}
-            />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="row"
-          >
-            <div className="col">
-              <span>04</span>
-              <h3>Generate Leads Continuously</h3>
-              <p>
-                AIris runs around the clock to deliver a constant stream of
-                qualified leads, so the team has new opportunities to follow up
-                on.
-              </p>
-            </div>
-            <Image
-              alt="benefit4"
-              src={"/images/home/benefit4.png"}
-              width={770}
-              height={368}
-            />
-          </motion.div>
+          ))}
         </div>
       </div>
     </section>

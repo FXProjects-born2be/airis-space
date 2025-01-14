@@ -3,6 +3,9 @@
 header {
   padding: rem(18) 0;
   background: #09090b;
+  position: sticky;
+  top: 0;
+  z-index: 999;
   .header-row {
     display: flex;
     align-items: center;
