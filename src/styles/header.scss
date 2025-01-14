@@ -1,1 +1,56 @@
 @use "mixin" as *;
+
+header {
+  padding: rem(18) 0;
+  background: #09090b;
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+      width: 33.33%;
+      flex-grow: 1;
+      &.col-01 {
+        display: flex;
+        align-items: center;
+        gap: rem(20);
+        nav {
+          display: flex;
+          align-items: center;
+          gap: rem(20);
+          @media (max-width: rem(992)) {
+            display: none;
+          }
+          a {
+            color: #ffffff;
+            font-size: rem(16);
+            font-weight: 400;
+            line-height: 1;
+            text-align: left;
+          }
+        }
+      }
+      &.col-02 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &.col-03 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a {
+          color: #ffffff;
+          font-size: rem(16);
+          font-weight: 400;
+          line-height: 1;
+          text-align: right;
+          list-style-type: disc;
+          @media (max-width: rem(992)) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
