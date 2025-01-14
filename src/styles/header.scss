@@ -2,10 +2,28 @@
 
 header {
   padding: rem(18) 0;
-  background: #09090b;
+
   position: sticky;
   top: 0;
   z-index: 999;
+  &.active {
+    background: #09090b;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
   .header-row {
     display: flex;
     align-items: center;

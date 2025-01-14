@@ -14,7 +14,7 @@ export default function Home() {
       <HomeBenefits />
       <HomeHow />
       <HomePrivacy />
-      <ContactUs />
+      <ContactUs image="/images/home/contact.png" />
     </>
   );
 }

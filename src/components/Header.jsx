@@ -1,11 +1,37 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "@/styles/header.scss";
 
 const Header = () => {
+  const [scrolling, setScrolling] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 992);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header>
+      <header className={scrolling ? "active header" : "header"}>
         <div className="_container">
           <div className="header-row">
             <div className="col-01">

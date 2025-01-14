@@ -18,7 +18,10 @@ const Footer = () => {
                 <Link href="#">Industries</Link>
               </li>
               <li>
-                <Link href="#">Standards</Link>
+                <Link href="/aIris-standards">Standards</Link>
+              </li>
+              <li>
+                <Link href="/how-airis-works">How AIris Works</Link>
               </li>
               <li>
                 <Link href="#">Press Room</Link>
@@ -27,7 +30,7 @@ const Footer = () => {
                 <Link href="#">Careers</Link>
               </li>
               <li>
-                <Link href="#">About Us</Link>
+                <Link href="/about-us">About Us</Link>
               </li>
               <li>
                 <Link href="#">Contact Us</Link>

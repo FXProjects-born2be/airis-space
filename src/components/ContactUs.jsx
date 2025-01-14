@@ -11,7 +11,7 @@ import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 import CheckboxIcon from "@/icons/CheckboxIcon";
 
-const ContactUs = () => {
+const ContactUs = ({ image, title }) => {
   const countryCode = useCountryCode();
   const validationSchema = Yup.object({
     name: Yup.string().required("This field is required"),
@@ -78,12 +78,7 @@ const ContactUs = () => {
             variants={fadeInUp}
             className="col-01"
           >
-            <Image
-              alt="contact"
-              src="/images/home/contact.png"
-              width={530}
-              height={415}
-            />
+            <Image alt="contact" src={image} width={530} height={415} />
           </motion.div>
           <motion.div
             initial="hidden"
@@ -92,7 +87,11 @@ const ContactUs = () => {
             variants={fadeInUp}
             className="col-02"
           >
-            <h2>Contact Us for More Information</h2>
+            {title ? (
+              <h2 dangerouslySetInnerHTML={{ __html: title }} />
+            ) : (
+              <h2>Contact Us for More Information</h2>
+            )}
 
             <Formik
               initialValues={initialValues}

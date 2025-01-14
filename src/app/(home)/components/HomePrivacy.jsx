@@ -36,7 +36,7 @@ const HomePrivacy = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <Link href="#">
+            <Link href="/aIris-standards">
               Learn More
               <ButtonArrow />
             </Link>
