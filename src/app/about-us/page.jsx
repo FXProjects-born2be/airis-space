@@ -4,6 +4,7 @@ import AboutHero from "./_components/AboutHero";
 import ContactUs from "@/components/ContactUs";
 import AboutMarketSolutions from "./_components/AboutMarketSolutions";
 import AboutHow from "./_components/AboutHow";
+import AboutMission from "./_components/AboutMission";
 
 const AboutUs = () => {
   return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
       <AboutHero />
       <AboutMarketSolutions />
       <AboutHow />
+      <AboutMission />
       <ContactUs image="/images/about/contact.png" />
     </>
   );

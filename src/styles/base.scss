@@ -370,6 +370,7 @@ body {
               padding: 0 rem(16);
               border-bottom: 1px solid #fff;
               color: #fff;
+              font-size: rem(14);
               &.invalid {
                 border-color: #e15353;
               }
@@ -382,7 +383,7 @@ body {
                   color: #1e1e1e;
                   &.highlight,
                   &:hover {
-                    background: #a225ee;
+                    background: #121321;
                     color: #fff;
                   }
                 }
@@ -396,7 +397,7 @@ body {
                 }
 
                 &::-webkit-scrollbar-thumb {
-                  background-color: #a225ee;
+                  background-color: #121321;
                   border-radius: 100px;
                 }
               }
@@ -409,6 +410,7 @@ body {
                 padding: 0 rem(16) 0 rem(40);
                 border-bottom: 1px solid #fff;
                 color: #fff;
+                font-size: rem(14);
               }
               &.invalid {
                 input {
