@@ -34,7 +34,7 @@ const HomeWhatIs = () => {
               intelligent calling, automatic lead filtering, and real-time
               insights.
             </p>
-            <Link href="#">
+            <Link href="/solutions">
               Explore Solutions
               <ButtonArrow />
             </Link>

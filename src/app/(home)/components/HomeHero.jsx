@@ -35,7 +35,7 @@ const HomeHero = () => {
             variants={fadeInUp}
             className="buttons"
           >
-            <Link href="#">
+            <Link href="/solutions">
               Solutions <ButtonArrow />
             </Link>
             <Link href="#">
