@@ -265,7 +265,7 @@
     background-position: center;
     background-repeat: no-repeat;
     @media (max-width: rem(992)) {
-      padding: rem(80) 0;
+      padding: rem(80) rem(16);
       background-size: contain;
     }
     h2 {

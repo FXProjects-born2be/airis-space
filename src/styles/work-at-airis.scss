@@ -173,7 +173,8 @@
               font-size: rem(14);
             }
           }
-          a, button {
+          a,
+          button {
             height: rem(40);
             display: flex;
             align-items: center;
@@ -188,12 +189,12 @@
             gap: rem(4);
             color: #fff;
             border: 1px solid #fff;
-            &:hover{
+            &:hover {
               background: #fff;
               color: #000;
-              svg{
-                path{
-                  fill:#000;
+              svg {
+                path {
+                  fill: #000;
                 }
               }
             }
@@ -230,7 +231,7 @@
     background-position: center;
     background-repeat: no-repeat;
     @media (max-width: rem(992)) {
-      padding: rem(80) 0;
+      padding: rem(80) rem(16);
       background-size: contain;
     }
     h2 {
