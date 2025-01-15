@@ -25,8 +25,15 @@ const clash = localFont({
 });
 
 export const metadata = {
-  title: "AIris",
-  description: "AI-powered solutions",
+  title: "AI Call Center Automation",
+  description:
+    "Discover how AI-powered call center solutions streamline operations and boost lead engagement. Explore our approach for efficient outreach.",
+  openGraph: {
+    title: "AI Call Center Automation",
+    description:
+      "Discover how AI-powered call center solutions streamline operations and boost lead engagement. Explore our approach for efficient outreach.",
+    //images: "",
+  },
 };
 
 export default function RootLayout({ children }) {
