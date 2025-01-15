@@ -43,7 +43,7 @@ const HomeHow = () => {
             className="row"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             variants={containerVariants}
           >
             <motion.div variants={fadeInUp} className="col">
