@@ -58,7 +58,7 @@ const AboutHow = () => {
       index: 1,
       title: "User-Friendly Design",
       description:
-        "AIris is designed for everyone. With a simple setup process and no need for specialized training, you can get started quickly and focus on what matters—engaging your leads.",
+        "Airis is designed for everyone. With a simple setup process and no need for specialized training, you can get started quickly and focus on what matters—engaging your leads.",
       imageSrc: "/images/how/01.svg",
     },
     {
@@ -72,21 +72,21 @@ const AboutHow = () => {
       index: 3,
       title: "Scalable to Your Needs",
       description:
-        "Whether you’re managing a small database or millions of leads, AIris scales effortlessly to meet your needs as your business grows.",
+        "Whether you’re managing a small database or millions of leads, Airis scales effortlessly to meet your needs as your business grows.",
       imageSrc: "/images/how/03.svg",
     },
     {
       index: 4,
       title: "Clear and Actionable Insights",
       description:
-        "AIris provides straightforward, categorized reports, helping you prioritize high-potential leads and make informed decisions without digging through unnecessary data.",
+        "Airis provides straightforward, categorized reports, helping you prioritize high-potential leads and make informed decisions without digging through unnecessary data.",
       imageSrc: "/images/how/04.svg",
     },
     {
       index: 5,
       title: "Reliable and Consistent Results",
       description:
-        "AIris delivers what it promises—efficient lead management, clear reporting, and real-time call transfer for critical interactions.",
+        "Airis delivers what it promises—efficient lead management, clear reporting, and real-time call transfer for critical interactions.",
       imageSrc: "/images/how/05.svg",
     },
   ];
@@ -104,7 +104,7 @@ const AboutHow = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              How AIris is Different
+              How Airis is Different
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -112,7 +112,7 @@ const AboutHow = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              We created AIris to address these challenges and offer a smarter, simpler solution for businesses:
+              We created Airis to address these challenges and offer a smarter, simpler solution for businesses:
             </motion.p>
           </div>
           <div className="row-wrap">

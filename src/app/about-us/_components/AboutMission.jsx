@@ -25,7 +25,7 @@ const AboutMission = () => {
             variants={fadeInUp}
           >
             Call center optimization should be simple, affordable, and effective
-            for businesses of all sizes. AIris is more than just a tool; it’s a
+            for businesses of all sizes. Airis is more than just a tool; it’s a
             solution designed to empower enterprises with modern technology
             while cutting through the noise and inefficiencies of the market.
           </motion.p>

@@ -9,21 +9,21 @@ const HowWorkflow = () => {
       index: 1,
       title: "Lead Database Integration",
       description:
-        "AIris seamlessly integrates your lead database, categorized by geography or other parameters, for efficient processing.",
+        "Airis seamlessly integrates your lead database, categorized by geography or other parameters, for efficient processing.",
       imageSrc: "/images/how/feature1.svg",
     },
     {
       index: 2,
       title: "Custom Script Creation",
       description:
-        "AIris designs fully customized scripts tailored to your business goals and target audience, ensuring effective engagement.",
+        "Airis designs fully customized scripts tailored to your business goals and target audience, ensuring effective engagement.",
       imageSrc: "/images/how/feature2.svg",
     },
     {
       index: 3,
       title: "AI-Powered Calling ＆Outreach",
       description:
-        "AIris uses NLP for human-like conversations, collecting responses and ensuring continuous lead engagement.",
+        "Airis uses NLP for human-like conversations, collecting responses and ensuring continuous lead engagement.",
       imageSrc: "/images/how/feature3.svg",
     },
     {
@@ -37,7 +37,7 @@ const HowWorkflow = () => {
       index: 5,
       title: "Callback Scheduling",
       description:
-        "AIris records and schedules callbacks for interested leads, ensuring timely follow-ups based on their preferences.",
+        "Airis records and schedules callbacks for interested leads, ensuring timely follow-ups based on their preferences.",
       imageSrc: "/images/how/feature5.svg",
     },
     {
@@ -58,7 +58,7 @@ const HowWorkflow = () => {
       index: 8,
       title: "Data Security",
       description:
-        "AIris ensures your data is handled securely and used only for the agreed services, adhering to strict privacy standards.",
+        "Airis ensures your data is handled securely and used only for the agreed services, adhering to strict privacy standards.",
       imageSrc: "/images/how/feature8.svg",
     },
   ];
@@ -75,7 +75,7 @@ const HowWorkflow = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            AIris Workflow and Specific Features
+            Airis Workflow and Specific Features
           </motion.h2>
           <div className="row">
             {features.map((feature) => (

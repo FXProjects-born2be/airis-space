@@ -6,7 +6,7 @@ import WorkLoop from "./_components/WorkLoop";
 import WorkCta from "./_components/WorkCta";
 import JobPopup from "@/components/JobPopup";
 
-const WorkAtAIris = () => {
+const WorkAtAiris = () => {
   return (
     <>
       <WorkHero />
@@ -21,4 +21,4 @@ const WorkAtAIris = () => {
   );
 };
 
-export default WorkAtAIris;
+export default WorkAtAiris;

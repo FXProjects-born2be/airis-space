@@ -17,7 +17,7 @@ const WorkHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Work at AIris
+              Work at Airis
             </motion.h1>
             <motion.h2
               initial="hidden"

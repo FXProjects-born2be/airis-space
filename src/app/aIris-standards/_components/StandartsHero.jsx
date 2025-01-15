@@ -30,7 +30,7 @@ const StandartsHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              AIris Standards
+              Airis Standards
             </motion.h1>
             <motion.h2
               initial="hidden"

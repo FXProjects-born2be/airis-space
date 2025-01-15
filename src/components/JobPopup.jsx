@@ -242,7 +242,7 @@ function JobPopup() {
                     </div>
                   ) : (
                     <div className="form-wrap">
-                      <h2>Work at AIris</h2>
+                      <h2>Work at Airis</h2>
                       <Form>
                         {/* Full Name Field */}
                         <div className="input-wrap">

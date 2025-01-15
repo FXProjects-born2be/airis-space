@@ -11,7 +11,7 @@ const AboutUs = () => {
       <HowWorkflow />
       <ContactUs
         image="/images/how/contact.png"
-        title="Discover how AIris can assist your business. <span>Contact us for more information!</span>"
+        title="Discover how Airis can assist your business. <span>Contact us for more information!</span>"
       />
     </>
   );

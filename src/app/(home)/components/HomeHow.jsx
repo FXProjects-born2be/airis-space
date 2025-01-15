@@ -36,7 +36,7 @@ const HomeHow = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            How AIris Works
+            How Airis Works
           </motion.h2>
           {/* Apply stagger animation to the parent row */}
           <motion.div
@@ -55,7 +55,7 @@ const HomeHow = () => {
                 </h3>
                 <p>
                   Upload your customer information, including names and phone
-                  numbers, to the AIris system securely.
+                  numbers, to the Airis system securely.
                 </p>
               </div>
             </motion.div>
@@ -67,7 +67,7 @@ const HomeHow = () => {
                   Calling
                 </h3>
                 <p>
-                  AIris makes calls to your contacts, using advanced speech
+                  Airis makes calls to your contacts, using advanced speech
                   recognition to engage with them and gather responses.
                 </p>
               </div>

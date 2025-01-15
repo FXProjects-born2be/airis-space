@@ -27,7 +27,7 @@ const WorkLoop = () => {
       title: "Market the Value",
       position: "Marketing Expert",
       description:
-        "We seek <b>marketing experts</b> who can explain our product's real benefits to businesses. Your work will connect us with customers and show how AIris solves real problems.",
+        "We seek <b>marketing experts</b> who can explain our product's real benefits to businesses. Your work will connect us with customers and show how Airis solves real problems.",
     },
   ];
 

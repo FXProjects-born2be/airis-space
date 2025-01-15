@@ -18,7 +18,7 @@ const HomeWhatIs = () => {
             variants={fadeInUp}
           >
             What is <br />
-            AIris?
+            Airis?
           </motion.h2>
           <motion.div
             initial="hidden"
@@ -29,7 +29,7 @@ const HomeWhatIs = () => {
           >
             <h3>Effortless automation, powerful results.</h3>
             <p>
-              Meet AIris - your new AI for call center automation. Boost
+              Meet Airis - your new AI for call center automation. Boost
               efficiency, reduce costs, and optimize lead engagement with
               intelligent calling, automatic lead filtering, and real-time
               insights.
