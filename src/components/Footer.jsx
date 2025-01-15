@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-top">
             <ul className="nav">
               <li>
-                <Link href="#">Solutions</Link>
+                <Link href="/solutions">Solutions</Link>
               </li>
               <li>
                 <Link href="#">Industries</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Link href="#">Press Room</Link>
               </li>
               <li>
-                <Link href="#">Careers</Link>
+                <Link href="/work-at-airis">Careers</Link>
               </li>
               <li>
                 <Link href="/about-us">About Us</Link>

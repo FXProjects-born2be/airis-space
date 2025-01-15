@@ -39,7 +39,7 @@ const Header = () => {
                 <img src="/images/menuBtn.svg" />
               </button>
               <nav>
-                <Link href="#">Solutions</Link>
+                <Link href="/solutions">Solutions</Link>
                 <Link href="#">Industries</Link>
                 <Link href="#">Press Room</Link>
               </nav>
