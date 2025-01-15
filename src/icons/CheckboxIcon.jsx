@@ -9,8 +9,8 @@ const CheckboxIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <rect x="0.5" y="0.5" width="23" height="23" rx="1.5" stroke="#64748B" />
-      <rect x="6" y="6" width="12" height="12" rx="2" fill="#D9D9D9" />
+      <rect x="1.5" y="1.5" width="21" height="21" rx="1.5" stroke="#64748B" />
+      <rect x="4" y="4" width="16" height="16" rx="1" fill="white" />
     </svg>
   );
 };

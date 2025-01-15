@@ -70,12 +70,12 @@ const Footer = () => {
                 <div>
                   <h4>Registration Address</h4>
                   <p>
-                    86 Hoża street, Unit 210, Warsaw, Postcode 00-682, Poland
+                    
                   </p>
                 </div>
                 <div>
                   <h4>Office Address</h4>
-                  <p>Królowej Marysieńki 90/lok. 7, 02-954 Warsaw</p>
+                  <p></p>
                 </div>
                 <div>
                   <h4>Email</h4>
@@ -83,7 +83,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h4>Phone</h4>
-                  <Link href="tel:+48573503926">+48573503926</Link>
+                  <Link href="tel:+48573503926"></Link>
                 </div>
               </div>
               <div className="soc">
