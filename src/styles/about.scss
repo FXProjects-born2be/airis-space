@@ -25,17 +25,17 @@
       flex-direction: column;
       align-items: center;
       @media (max-width: rem(992)) {
-        &:first-child{
-          img{
+        &:first-child {
+          img {
             left: -70%;
           }
         }
-        &:last-child{
-          img{
+        &:last-child {
+          img {
             right: -70%;
           }
         }
-        img{
+        img {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
@@ -162,8 +162,30 @@
       opacity: 0;
       transition: all 1s;
       z-index: 0;
+      .col-01 {
+        img {
+          transform: translateY(100px);
+          transition: all 1s;
+        }
+      }
+      .col-02 {
+        transform: scale(0);
+        transition: all 1s;
+        transform-origin: center left;
+      }
       &.active {
         opacity: 1;
+        transform: scale(1);
+        .col-01 {
+          img {
+            transform: translateY(0);
+            transition: all 1s;
+          }
+        }
+        .col-02 {
+          transform: scale(1);
+          transition: all 1s;
+        }
       }
       @media (max-width: rem(992)) {
         flex-direction: column;
@@ -209,8 +231,7 @@
   }
 }
 
-
-.about-mission{
+.about-mission {
   &__body {
     padding: rem(160) 0;
     border-left: 1px solid #475569;
