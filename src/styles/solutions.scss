@@ -316,6 +316,8 @@
     z-index: 1;
     gap: rem(30);
     padding: rem(40) rem(16);
+    border-top: 1px solid #475569;
+    border-bottom: 1px solid #475569;
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     @media (max-width: rem(992)) {
