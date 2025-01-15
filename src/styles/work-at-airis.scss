@@ -188,6 +188,15 @@
             gap: rem(4);
             color: #fff;
             border: 1px solid #fff;
+            &:hover{
+              background: #fff;
+              color: #000;
+              svg{
+                path{
+                  fill:#000;
+                }
+              }
+            }
             svg {
               path {
                 fill: #fff;

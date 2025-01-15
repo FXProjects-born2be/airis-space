@@ -228,6 +228,15 @@
                 fill: #fff;
               }
             }
+            &:hover{
+              background: #fff;
+              color: #000;
+              svg{
+                path{
+                  fill:#000;
+                }
+              }
+            }
           }
         }
       }
@@ -388,6 +397,15 @@
         svg {
           path {
             fill: #000000;
+          }
+        }
+        &:hover{
+          background: transparent;
+          color: #fff;
+          svg{
+            path{
+              fill:#fff;
+            }
           }
         }
       }

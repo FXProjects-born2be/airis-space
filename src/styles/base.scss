@@ -302,6 +302,16 @@ body {
             gap: rem(4);
             color: #000;
             margin-top: rem(8);
+            border: 1px solid #fff;
+            &:hover{
+              background: transparent;
+              color: #fff;
+              svg{
+                path{
+                  fill:#fff;
+                }
+              }
+            }
           }
           > div {
             width: calc(50% - rem(8));
