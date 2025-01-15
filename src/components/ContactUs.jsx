@@ -36,14 +36,8 @@ const ContactUs = ({ image, title }) => {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    setTimeout(() => {
-      setSubmitting(false);
-      resetForm();
-      setStatus({ success: true });
-    }, 400);
-    /*
     try {
-      const response = await fetch("/api/emails/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +58,7 @@ const ContactUs = ({ image, title }) => {
       //console.error(error);
       setStatus({ success: false });
       setSubmitting(false);
-    }*/
+    }
   };
 
   return (
@@ -87,12 +81,6 @@ const ContactUs = ({ image, title }) => {
             variants={fadeInUp}
             className="col-02"
           >
-            {title ? (
-              <h2 dangerouslySetInnerHTML={{ __html: title }} />
-            ) : (
-              <h2>Contact Us for More Information</h2>
-            )}
-
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
@@ -108,95 +96,118 @@ const ContactUs = ({ image, title }) => {
               }) => (
                 <div className="form-wrap">
                   <Form>
-                    <div className="form-inner">
-                      <div>
-                        <Field
-                          name="name"
-                          type="text"
-                          placeholder="Your Name"
-                          className={
-                            touched.name && errors.name ? "invalid" : ""
-                          }
-                        />
-                        <ErrorMessage
-                          name="name"
-                          component="div"
-                          className="error"
-                        />
-                      </div>
+                    {!status && (
+                      <>
+                        {title ? (
+                          <h2 dangerouslySetInnerHTML={{ __html: title }} />
+                        ) : (
+                          <h2>Contact Us for More Information</h2>
+                        )}
+                        <div className="form-inner">
+                          <div>
+                            <Field
+                              name="name"
+                              type="text"
+                              placeholder="Your Name"
+                              className={
+                                touched.name && errors.name ? "invalid" : ""
+                              }
+                            />
+                            <ErrorMessage
+                              name="name"
+                              component="div"
+                              className="error"
+                            />
+                          </div>
 
-                      <div>
-                        <PhoneInput
-                          country={countryCode}
-                          placeholder="Phone"
-                          onChange={(phone) => setFieldValue("phone", phone)}
-                          className={
-                            touched.phone && errors.phone ? "invalid" : ""
-                          }
-                        />
-                        <ErrorMessage
-                          name="phone"
-                          component="div"
-                          className="error"
-                        />
-                      </div>
+                          <div>
+                            <PhoneInput
+                              country={countryCode}
+                              placeholder="Phone"
+                              onChange={(phone) =>
+                                setFieldValue("phone", phone)
+                              }
+                              className={
+                                touched.phone && errors.phone ? "invalid" : ""
+                              }
+                            />
+                            <ErrorMessage
+                              name="phone"
+                              component="div"
+                              className="error"
+                            />
+                          </div>
 
-                      <div>
-                        <Field
-                          name="email"
-                          type="email"
-                          placeholder="Your Email"
-                          className={
-                            touched.email && errors.email ? "invalid" : ""
-                          }
-                        />
-                        <ErrorMessage
-                          name="email"
-                          component="div"
-                          className="error"
-                        />
-                      </div>
+                          <div>
+                            <Field
+                              name="email"
+                              type="email"
+                              placeholder="Your Email"
+                              className={
+                                touched.email && errors.email ? "invalid" : ""
+                              }
+                            />
+                            <ErrorMessage
+                              name="email"
+                              component="div"
+                              className="error"
+                            />
+                          </div>
 
-                      <div>
-                        <Field
-                          name="message"
-                          type="text"
-                          placeholder="Your Message"
-                        />
-                      </div>
+                          <div>
+                            <Field
+                              name="message"
+                              type="text"
+                              placeholder="Your Message"
+                            />
+                          </div>
 
-                      <div className="checkbox">
-                        <label>
-                          <Field
-                            name="agree"
-                            type="checkbox"
-                            className="checkbox"
-                          />
-                          <CheckboxIcon />
-                          <span>
-                            I have read the Privacy Policy and agree to the
-                            terms and conditions
-                          </span>
-                        </label>
-                        <ErrorMessage
-                          name="agree"
-                          component="div"
-                          className="error"
-                        />
-                      </div>
+                          <div className="checkbox">
+                            <label>
+                              <Field
+                                name="agree"
+                                type="checkbox"
+                                className="checkbox"
+                              />
+                              <CheckboxIcon />
+                              <span>
+                                I have read the Privacy Policy and agree to the
+                                terms and conditions
+                              </span>
+                            </label>
+                            <ErrorMessage
+                              name="agree"
+                              component="div"
+                              className="error"
+                            />
+                          </div>
 
-                      <button
-                        type="submit"
-                        className="order-button"
-                        disabled={isSubmitting}
-                      >
-                        <span>Submit</span>
-                        <ButtonArrow />
-                      </button>
-                    </div>
+                          <button
+                            type="submit"
+                            className="order-button"
+                            disabled={isSubmitting}
+                          >
+                            <span>Submit</span>
+                            <ButtonArrow />
+                          </button>
+                        </div>
+                      </>
+                    )}
+                    {isSubmitting && (
+                      <div className="loading">
+                        <img src="/images/loading.svg" />
+                      </div>
+                    )}
                     {status && status.success && (
                       <div className="success">
-                        <h3>Submission successful!</h3>
+                        <h2>
+                          Thank you!
+                          <span>
+                            Your request has been successfully submitted. Our
+                            team will review your message and get back to you
+                            shortly.
+                          </span>
+                        </h2>
                       </div>
                     )}
                   </Form>

@@ -96,6 +96,29 @@
         background-image: none;
         padding: rem(50) rem(16);
       }
+      form {
+        position: relative;
+        .loading {
+          position: absolute;
+          z-index: 999;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 105%;
+          height: 105%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: radial-gradient(
+            rgb(18 19 33 / 50%) 36%,
+            rgb(18 19 33 / 0%) 70%
+          );
+          backdrop-filter: blur(2px);
+          img {
+            width: rem(50);
+          }
+        }
+      }
     }
 
     .request-form {

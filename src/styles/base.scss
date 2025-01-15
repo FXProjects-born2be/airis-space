@@ -277,6 +277,28 @@ body {
         width: 100%;
       }
       .form-wrap {
+        form {
+          position: relative;
+          .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 105%;
+            height: 105%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(
+              rgb(18 19 33 / 50%) 36%,
+              rgb(18 19 33 / 0%) 70%
+            );
+            backdrop-filter: blur(2px);
+            img {
+              width: rem(50);
+            }
+          }
+        }
         .success {
           margin-top: rem(32);
           font-size: rem(18);
@@ -303,12 +325,12 @@ body {
             color: #000;
             margin-top: rem(8);
             border: 1px solid #fff;
-            &:hover{
+            &:hover {
               background: transparent;
               color: #fff;
-              svg{
-                path{
-                  fill:#fff;
+              svg {
+                path {
+                  fill: #fff;
                 }
               }
             }

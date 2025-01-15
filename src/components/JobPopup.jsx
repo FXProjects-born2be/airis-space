@@ -147,10 +147,7 @@ function JobPopup() {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    resetForm();
-    setStatus({ success: true });
-    /*try {
-      // Prepare form data with Base64 file attachments
+    try {
       const prepareFile = async (file) => {
         if (!file) return null;
         const data = await new Promise((resolve, reject) => {
@@ -163,19 +160,16 @@ function JobPopup() {
       };
 
       const cv = await prepareFile(values.cv);
-      const portfolio = await prepareFile(values.portfolio);
 
       const formData = {
-        fullName: values.fullName,
+        name: values.fullName,
         email: values.email,
         phone: values.phone,
-        position: values.position,
+        position: jobValue,
+        link: values.link,
         cv,
-        portfolio,
-        comments: values.comments,
       };
 
-      // Send form data to the server
       const response = await fetch("/api/job", {
         method: "POST",
         headers: {
@@ -184,19 +178,20 @@ function JobPopup() {
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit application.");
+      if (response.ok) {
+        setTimeout(() => {
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
       }
-
-      // Reset form and show success message
-      resetForm();
-      setStatus({ success: true });
     } catch (error) {
-      console.error("Error submitting the form:", error);
+      //console.error(error);
       setStatus({ success: false });
-    } finally {
       setSubmitting(false);
-    }*/
+    }
   };
 
   return (
@@ -244,6 +239,11 @@ function JobPopup() {
                     <div className="form-wrap">
                       <h2>Work at Airis</h2>
                       <Form>
+                        {isSubmitting && (
+                          <div className="loading">
+                            <img src="/images/loading.svg" />
+                          </div>
+                        )}
                         {/* Full Name Field */}
                         <div className="input-wrap">
                           <Field

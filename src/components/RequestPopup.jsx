@@ -126,36 +126,17 @@ function RequestPopup() {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    resetForm();
-    setStatus({ success: true });
-    /*try {
-      // Prepare form data with Base64 file attachments
-      const prepareFile = async (file) => {
-        if (!file) return null;
-        const data = await new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result.split(",")[1]); // Exclude data prefix
-          reader.onerror = (error) => reject(error);
-          reader.readAsDataURL(file);
-        });
-        return { filename: file.name, mimeType: file.type, data };
-      };
-
-      const cv = await prepareFile(values.cv);
-      const portfolio = await prepareFile(values.portfolio);
+    try {
 
       const formData = {
-        fullName: values.fullName,
+        name: values.fullName,
         email: values.email,
         phone: values.phone,
-        position: values.position,
-        cv,
-        portfolio,
-        comments: values.comments,
+        plan: plansValue,
+        message: values.message,
       };
 
-      // Send form data to the server
-      const response = await fetch("/api/job", {
+      const response = await fetch("/api/request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -163,19 +144,20 @@ function RequestPopup() {
         body: JSON.stringify(formData),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit application.");
+      if (response.ok) {
+        setTimeout(() => {
+          setSubmitting(false);
+          resetForm();
+          setStatus({ success: true });
+        }, 400);
+      } else {
+        setStatus({ success: false });
       }
-
-      // Reset form and show success message
-      resetForm();
-      setStatus({ success: true });
     } catch (error) {
-      console.error("Error submitting the form:", error);
+      //console.error(error);
       setStatus({ success: false });
-    } finally {
       setSubmitting(false);
-    }*/
+    }
   };
 
   return (
@@ -226,6 +208,11 @@ function RequestPopup() {
                     <div className="form-wrap">
                       <h2>{plansValue} Plan Request</h2>
                       <Form>
+                        {isSubmitting && (
+                          <div className="loading">
+                            <img src="/images/loading.svg" />
+                          </div>
+                        )}
                         {/* Full Name Field */}
                         <div className="input-wrap">
                           <Field
