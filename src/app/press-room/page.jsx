@@ -1,6 +1,8 @@
 import React from "react";
 import "@/styles/press-room.scss";
 import { getPosts } from "@/utils/blogUtils";
+import PressRoomHero from "./_components/PressRoomHero";
+import PressRoomLoop from "./_components/PressRoomLoop";
 
 export const metadata = {
   title: "Press Room | Airis",
@@ -34,7 +36,8 @@ const Resources = async () => {
   const posts = await getPosts();
   return (
     <>
-      
+      <PressRoomHero />
+      <PressRoomLoop />
     </>
   );
 };

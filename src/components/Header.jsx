@@ -41,7 +41,7 @@ const Header = () => {
               <nav>
                 <Link href="/solutions">Solutions</Link>
                 <Link href="/industries">Industries</Link>
-                <Link href="#">Press Room</Link>
+                <Link href="/press-room">Press Room</Link>
               </nav>
             </div>
             <div className="col-02">
