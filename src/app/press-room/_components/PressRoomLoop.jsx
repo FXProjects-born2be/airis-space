@@ -58,6 +58,7 @@ const PressRoomLoop = () => {
               variants={fadeInUp}
               className="post"
               key={index}
+              custom={1}
             >
               <Link href={`/press-room/${post.slug}`}>
                 <Image alt="article1" src={post.img} width={500} height={500} />
