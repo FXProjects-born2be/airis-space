@@ -40,7 +40,7 @@ const Header = () => {
               </button>
               <nav>
                 <Link href="/solutions">Solutions</Link>
-                <Link href="#">Industries</Link>
+                <Link href="/industries">Industries</Link>
                 <Link href="#">Press Room</Link>
               </nav>
             </div>

@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link href="/solutions">Solutions</Link>
               </li>
               <li>
-                <Link href="#">Industries</Link>
+                <Link href="/industries">Industries</Link>
               </li>
               <li>
                 <Link href="/aIris-standards">Standards</Link>
