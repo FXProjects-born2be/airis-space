@@ -26,7 +26,7 @@ const HomeHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            A-driven solutions to optimise call center efficiency.
+            AI-driven solutions to optimise call center efficiency.
           </motion.h2>
           <motion.div
             initial="hidden"
