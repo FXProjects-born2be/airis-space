@@ -25,11 +25,11 @@ const clash = localFont({
 });
 
 export const metadata = {
-  title: "AI Call Center Automation",
+  title: "AI Call Center Automation | Airis",
   description:
     "Discover how AI-powered call center solutions streamline operations and boost lead engagement. Explore our approach for efficient outreach.",
   openGraph: {
-    title: "AI Call Center Automation",
+    title: "AI Call Center Automation | Airis",
     description:
       "Discover how AI-powered call center solutions streamline operations and boost lead engagement. Explore our approach for efficient outreach.",
     //images: "",

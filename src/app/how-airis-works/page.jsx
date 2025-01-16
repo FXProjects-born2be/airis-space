@@ -4,7 +4,19 @@ import ContactUs from "@/components/ContactUs";
 import HowWorksHero from "./_components/HowWorksHero";
 import HowWorkflow from "./_components/HowWorkflow";
 
-const AboutUs = () => {
+export const metadata = {
+  title: "How Call Center AI Works | Airis",
+  description:
+    "Discover how AI-driven call center automation works. Explore the process from data upload to lead filtering and actionable reports.",
+  openGraph: {
+    title: "How Call Center AI Works | Airis",
+    description:
+      "Discover how AI-driven call center automation works. Explore the process from data upload to lead filtering and actionable reports.",
+    //images: "",
+  },
+};
+
+const HowWorks = () => {
   return (
     <>
       <HowWorksHero />
@@ -17,4 +29,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default HowWorks;

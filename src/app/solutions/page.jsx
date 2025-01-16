@@ -6,6 +6,18 @@ import SolutionsLoop from "./_components/SolutionsLoop";
 import RequestPopup from "@/components/RequestPopup";
 import SolutionsCta from "./_components/SolutionsCta";
 
+export const metadata = {
+  title: "Solutions | Airis",
+  description:
+    "Explore AI-driven call center solutions that automate calls, filter leads, and optimize outreach. Discover the right plan for your business.",
+  openGraph: {
+    title: "Solutions | Airis",
+    description:
+      "Explore AI-driven call center solutions that automate calls, filter leads, and optimize outreach. Discover the right plan for your business.",
+    //images: "",
+  },
+};
+
 const Solutions = () => {
   return (
     <>

@@ -6,6 +6,18 @@ import WorkLoop from "./_components/WorkLoop";
 import WorkCta from "./_components/WorkCta";
 import JobPopup from "@/components/JobPopup";
 
+export const metadata = {
+  title: "Careers in AI Call Center Technology | Airis",
+  description:
+    "Join our team and help develop AI-driven call center solutions. Explore opportunities in AI development, marketing, and business innovation.",
+  openGraph: {
+    title: "Careers in AI Call Center Technology | Airis",
+    description:
+      "Join our team and help develop AI-driven call center solutions. Explore opportunities in AI development, marketing, and business innovation.",
+    //images: "",
+  },
+};
+
 const WorkAtAiris = () => {
   return (
     <>
