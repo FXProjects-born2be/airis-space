@@ -57,9 +57,52 @@ export async function POST(request) {
       `
     );
 
+    const clientEmailBody = makeBody(
+      email, // Client email
+      process.env.EMAIL_USER, // Sender (admin)
+      "Airis: Your Plan Request Received", // Subject
+      `
+      <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
+        <thead>
+          <tr>
+              <td>
+                  <img style="width: 100%" src="https://airis.space/images/email_header.png" alt="Header" />
+              </td>
+          </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
+                        <h2 style="text-align: left; font-size: 20px;">Dear ${name},</h2>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for your interest in Airis! We have successfully received your plan request. Our team is reviewing the details and will contact you shortly to discuss your requirements and how Airis can be optimized to meet your business needs.</p>
+                         <p style="font-size: 16px; line-height: 19px;">If you have any immediate questions or additional details, please reply to this email.<br>
+                         We look forward to helping you get started with Airis!</p>
+                       <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
+                            Best regards,
+                            <br>The Airis Team
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="background:#09090B;padding:24px;color:#F7F7F7;font-size:24px;font-weight:400;text-align:center;">
+                      Thanks for using Airis
+                  </td>
+                </tr>
+            </tfoot>
+        </table>
+      `
+    );
+
     await gmail.users.messages.send({
       userId: "me",
       resource: { raw: adminEmailBody },
+    });
+
+    await gmail.users.messages.send({
+      userId: "me",
+      resource: { raw: clientEmailBody },
     });
 
     return NextResponse.json({ message: "Request sent successfully." });
