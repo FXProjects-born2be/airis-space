@@ -14,7 +14,7 @@ export const metadata = {
     title: "Careers in AI Call Center Technology | Airis",
     description:
       "Join our team and help develop AI-driven call center solutions. Explore opportunities in AI development, marketing, and business innovation.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 

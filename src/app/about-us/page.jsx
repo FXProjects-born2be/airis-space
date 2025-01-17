@@ -14,7 +14,7 @@ export const metadata = {
     title: "Airis Call Center Solutions | Airis",
     description:
       "Explore the Airis mission to transform call center operations with AI. Learn how we simplify outreach, reduce costs, and enhance lead engagement.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 

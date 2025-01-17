@@ -12,7 +12,7 @@ export const metadata = {
     title: "Press Room | Airis",
     description:
       "Explore the latest news, updates, and insights on AI-driven call center automation. Stay informed about industry trends and innovations.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 

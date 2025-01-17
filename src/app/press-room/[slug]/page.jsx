@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.seo_title,
       description: post.seo_description,
-      //images: "",
+      images: "https://airis.space/images/meta.png",
     },
   };
 }

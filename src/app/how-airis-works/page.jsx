@@ -12,7 +12,7 @@ export const metadata = {
     title: "How Call Center AI Works | Airis",
     description:
       "Discover how AI-driven call center automation works. Explore the process from data upload to lead filtering and actionable reports.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 

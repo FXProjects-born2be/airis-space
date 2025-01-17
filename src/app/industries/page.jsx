@@ -12,7 +12,7 @@ export const metadata = {
     title: "Industries We Serve | Airis",
     description:
       "Discover how AI-powered call center automation enhances efficiency across industries like finance, real estate, healthcare, and more.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 

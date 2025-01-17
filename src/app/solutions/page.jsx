@@ -14,7 +14,7 @@ export const metadata = {
     title: "Solutions | Airis",
     description:
       "Explore AI-driven call center solutions that automate calls, filter leads, and optimize outreach. Discover the right plan for your business.",
-    //images: "",
+    images: "https://airis.space/images/meta.png",
   },
 };
 
