@@ -38,7 +38,7 @@ const HomeHero = () => {
             <Link href="/solutions">
               Solutions <ButtonArrow />
             </Link>
-            <Link href="#">
+            <Link href="/contact-us">
               Contact Us <ButtonArrow />
             </Link>
           </motion.div>

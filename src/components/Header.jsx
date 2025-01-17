@@ -50,7 +50,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="col-03">
-              <Link href="#">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </div>
           </div>
         </div>
