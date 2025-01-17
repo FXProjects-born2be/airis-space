@@ -6,6 +6,7 @@ import ArticleHero from "./_components/ArticleHero";
 import Article1Second from "./_components/Article1Second";
 import ArticleCta from "./_components/ArticleCta";
 import Article3Second from "./_components/Article3Second";
+import ArticleLast from "./_components/ArticleLast";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -72,6 +73,16 @@ const BlogSingle = async ({ params }) => {
           <ArticleCta
             text={"Ready to Achieve Similar <br/>Results for Your Business?"}
           />
+          <ArticleLast
+            slug1={"ai-trends-in-business-process-optimization"}
+            title1={
+              "AI Trends in Business Process Optimization 2025 and Beyond"
+            }
+            img1={"/images/blog/article3.png"}
+            slug2={"comparing-human-call-center-efficiency-vs-airis"}
+            title2={"Case Study: Human vs. Airis"}
+            img2={"/images/blog/article2.png"}
+          />
         </>
       )}
 
@@ -82,6 +93,18 @@ const BlogSingle = async ({ params }) => {
               "Ready to learn more about <br/>AI-driven business process <br/>optimization?"
             }
           />
+          <ArticleLast
+            slug1={"comparing-human-call-center-efficiency-vs-airis"}
+            title1={"Case Study: Human vs. Airis"}
+            img1={"/images/blog/article2.png"}
+            slug2={
+              "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls"
+            }
+            title2={
+              "How AI Outbound Call Centers Elevate Customer Satisfaction"
+            }
+            img2={"/images/blog/article4.png"}
+          />
         </>
       )}
 
@@ -89,6 +112,18 @@ const BlogSingle = async ({ params }) => {
         <>
           <Article3Second />
           <ArticleCta text={"Ready to Transform <br/>Your Call Center?"} />
+          <ArticleLast
+            slug1={
+              "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls"
+            }
+            title1={
+              "How AI Outbound Call Centers Elevate Customer Satisfaction"
+            }
+            img1={"/images/blog/article4.png"}
+            slug2={"boosting-call-center-efficiency-with-airis"}
+            title2={"Case Study: Financial Firm Transforms Call Center "}
+            img2={"/images/blog/article1.png"}
+          />
         </>
       )}
 
@@ -97,6 +132,16 @@ const BlogSingle = async ({ params }) => {
         <>
           <ArticleCta
             text={"Interested in elevating your <br/>outbound calls with AI?"}
+          />
+          <ArticleLast
+            slug1={"boosting-call-center-efficiency-with-airis"}
+            title1={"Case Study: Financial Firm Transforms Call Center "}
+            img1={"/images/blog/article1.png"}
+            slug2={"ai-trends-in-business-process-optimization"}
+            title2={
+              "AI Trends in Business Process Optimization 2025 and Beyond"
+            }
+            img2={"/images/blog/article3.png"}
           />
         </>
       )}
