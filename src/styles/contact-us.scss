@@ -4,9 +4,10 @@
   position: relative;
   z-index: 1;
   padding: rem(128) 0;
-  overflow: hidden;
+  //overflow: hidden;
   @media (max-width: rem(992)) {
     padding: 0;
+    overflow: hidden;
   }
   > img {
     position: absolute;
@@ -27,11 +28,13 @@
     img {
       position: absolute;
       right: 0;
+      bottom:0;
       @media (max-width: rem(992)) {
         height: auto;
         width: rem(300);
         right: -75px;
         top: -170px;
+        bottom: unset;
       }
     }
     > div {
@@ -75,8 +78,21 @@
   }
 }
 
-
 .contact-block {
+  position: relative;
+  > img {
+    position: absolute;
+    z-index: 0;
+    max-width: 40%;
+    &:first-child {
+      left: 0;
+      top: -350px;
+    }
+    &:nth-child(2) {
+      right: 0;
+      top: 300px;
+    }
+  }
   &__body {
     padding: rem(90) rem(40);
     border-left: 1px solid #475569;
@@ -84,12 +100,13 @@
     position: relative;
     z-index: 1;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 30px;
     @media (max-width: rem(992)) {
       padding: rem(80) rem(16);
       background-size: contain;
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     h2 {
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 100%);
@@ -124,6 +141,23 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        h2 {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          @media (max-width: rem(992)) {
+            align-items: flex-start;
+          }
+          a {
+            background: linear-gradient(91.06deg, #fff 2.26%, #fff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #fff;
+            font-weight: 700;
+            font-size: rem(36);
+          }
+        }
         img {
           height: auto;
         }

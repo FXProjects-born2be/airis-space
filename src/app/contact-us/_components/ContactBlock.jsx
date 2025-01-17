@@ -10,6 +10,7 @@ import ButtonArrow from "@/icons/ButtonArrow";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 import CheckboxIcon from "@/icons/CheckboxIcon";
+import Link from "next/link";
 
 const ContactBlock = () => {
   const countryCode = useCountryCode();
@@ -63,6 +64,7 @@ const ContactBlock = () => {
 
   return (
     <section className="contact-block">
+      <img src="/images/home/ellipse3.png" />
       <div className="_container">
         <div className="contact-block__body">
           <motion.div
@@ -73,8 +75,8 @@ const ContactBlock = () => {
             className="col-01"
           >
             <h2>
-              Got a Question? <br />
-              Let's Discuss!
+              or via email
+              <Link href="mailto:info@airis.space">info@airis.space</Link>
             </h2>
             <Image
               alt="contact"
@@ -107,6 +109,10 @@ const ContactBlock = () => {
                   <Form>
                     {!status && (
                       <>
+                        <h2>
+                          Got a Question? <br />
+                          Let's Discuss!
+                        </h2>
                         <div className="form-inner">
                           <div>
                             <Field
