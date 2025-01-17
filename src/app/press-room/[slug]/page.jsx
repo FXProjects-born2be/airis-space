@@ -5,6 +5,7 @@ import Link from "next/link";
 import ArticleHero from "./_components/ArticleHero";
 import Article1Second from "./_components/Article1Second";
 import ArticleCta from "./_components/ArticleCta";
+import Article3Second from "./_components/Article3Second";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -86,6 +87,7 @@ const BlogSingle = async ({ params }) => {
 
       {slug == "comparing-human-call-center-efficiency-vs-airis" && (
         <>
+          <Article3Second />
           <ArticleCta text={"Ready to Transform <br/>Your Call Center?"} />
         </>
       )}
