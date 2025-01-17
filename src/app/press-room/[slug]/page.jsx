@@ -1,9 +1,10 @@
-import "@/styles/press-room.scss";
+import "@/styles/articles.scss";
 import { getPost, getSlugs } from "@/utils/blogUtils";
 import React from "react";
 import Link from "next/link";
-import InnerCoursesHero from "../_components/InnerCoursesHero";
-import InnerCourseText from "../_components/InnerCourseText";
+import ArticleHero from "./_components/ArticleHero";
+import Article1Second from "./_components/Article1Second";
+import ArticleCta from "./_components/ArticleCta";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -55,15 +56,49 @@ const BlogSingle = async ({ params }) => {
       : null;
 
   return (
-    <>
-      <InnerCoursesHero title={post.title} />
-      <InnerCourseText
-        content={post.body}
-        postSlug={slug}
-        prevSlug={prevSlug}
-        nextSlug={nextSlug}
+    <div className="article">
+      <ArticleHero
+        title={post.title}
+        subtitle={post.subtitle}
+        articleClass={slug}
+        img={post.thumbnail}
+        short={post.short_description}
       />
-    </>
+
+      {slug == "boosting-call-center-efficiency-with-airis" && (
+        <>
+          <Article1Second />
+          <ArticleCta
+            text={"Ready to Achieve Similar <br/>Results for Your Business?"}
+          />
+        </>
+      )}
+
+      {slug == "ai-trends-in-business-process-optimization" && (
+        <>
+          <ArticleCta
+            text={
+              "Ready to learn more about <br/>AI-driven business process <br/>optimization?"
+            }
+          />
+        </>
+      )}
+
+      {slug == "comparing-human-call-center-efficiency-vs-airis" && (
+        <>
+          <ArticleCta text={"Ready to Transform <br/>Your Call Center?"} />
+        </>
+      )}
+
+      {slug ==
+        "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls" && (
+        <>
+          <ArticleCta
+            text={"Interested in elevating your <br/>outbound calls with AI?"}
+          />
+        </>
+      )}
+    </div>
   );
 };
 

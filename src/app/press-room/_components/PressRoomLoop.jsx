@@ -33,7 +33,7 @@ const PressRoomLoop = () => {
       img: "/images/blog/article3.png",
     },
     {
-      slug: "ai-trends-in-business-process-optimization",
+      slug: "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls",
       title: "How AI Outbound Call Centers <br/>Elevate Customer Satisfaction",
       excerpt: `Discover how personalized outreach, intelligent lead filtering, and seamless human <br/>
             handoffs transform outbound calling into a positive customer experience.`,

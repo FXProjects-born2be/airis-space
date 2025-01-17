@@ -13,10 +13,10 @@ export async function getPost(slug, locale) {
   const text = await readFile(`./src/lib/resources/${fileSlug}.md`, "utf8");
   const {
     content,
-    data: { title, excerpt, short_description, seo_title, seo_description, thumbnail, category },
+    data: { title, excerpt, short_description, seo_title, seo_description, thumbnail, subtitle },
   } = matter(text);
   const body = marked(content);
-  return { slug: fileSlug, title, excerpt, short_description,  seo_title, seo_description, thumbnail, category, body };
+  return { slug: fileSlug, title, excerpt, short_description,  seo_title, seo_description, thumbnail, subtitle, body };
 }
 
 export async function getSlugs() {
