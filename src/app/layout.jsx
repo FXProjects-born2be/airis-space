@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const clash = localFont({
   src: [
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{ fontFamily: clash.style.fontFamily }}>
+        <Preloader />
         <Header />
         <main>{children}</main>
         <Footer />
