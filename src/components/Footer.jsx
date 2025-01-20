@@ -37,22 +37,10 @@ const Footer = () => {
               </li>
             </ul>
             <div className="soc">
-              <Link href="#">
-                LinkedIn
-                <ButtonArrow />
-              </Link>
-              <Link href="#">
-                Facebook
-                <ButtonArrow />
-              </Link>
-              <Link href="#">
-                Instagram
-                <ButtonArrow />
-              </Link>
-              <Link href="#">
-                Twitter
-                <ButtonArrow />
-              </Link>
+              <Link href="/terms-of-use">Terms of Use</Link>
+              <Link href="/cookie-policy">Cookie Policy</Link>
+              <Link href="/refund-policy">Refund Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
           </div>
           <div className="footer-main">
@@ -77,22 +65,10 @@ const Footer = () => {
                 </div> */}
               </div>
               <div className="soc">
-                <Link href="#">
-                  LinkedIn
-                  <ButtonArrow />
-                </Link>
-                <Link href="#">
-                  Facebook
-                  <ButtonArrow />
-                </Link>
-                <Link href="#">
-                  Instagram
-                  <ButtonArrow />
-                </Link>
-                <Link href="#">
-                  Twitter
-                  <ButtonArrow />
-                </Link>
+                <Link href="/terms-of-use">Terms of Use</Link>
+                <Link href="/cookie-policy">Cookie Policy</Link>
+                <Link href="/refund-policy">Refund Policy</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </div>
             </div>
           </div>
