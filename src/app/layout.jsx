@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{ fontFamily: clash.style.fontFamily }}>
-        
+        <Preloader />
         <Header />
         <main>{children}</main>
         <Footer />
