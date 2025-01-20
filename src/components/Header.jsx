@@ -2,10 +2,15 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import "@/styles/header.scss";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const [menuOpened, setMenuOpened] = useState(false);
+  const pathname = usePathname();
+
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setScrolling(true);
@@ -29,14 +34,28 @@ const Header = () => {
     };
   }, []);
 
+  const menuOpen = () => {
+    setMenuOpened(!menuOpened);
+    //document.body.classList.toggle("no-scroll", !menuOpened);
+  };
+
+  useEffect(() => {
+    setMenuOpened(false);
+    //document.body.classList.remove("no-scroll");
+  }, [pathname]);
+
   return (
     <>
       <header className={scrolling ? "active header" : "header"}>
         <div className="_container">
           <div className="header-row">
             <div className="col-01">
-              <button className="menu-btn">
-                <img src="/images/menuBtn.svg" />
+              <button onClick={() => menuOpen()} className="menu-btn">
+                {menuOpened ? (
+                  <img src="/images/menuBtnClose.svg" />
+                ) : (
+                  <img src="/images/menuBtn.svg" />
+                )}
               </button>
               <nav>
                 <Link href="/solutions">Solutions</Link>
@@ -55,6 +74,28 @@ const Header = () => {
           </div>
         </div>
       </header>
+      <div className={`menu-wrap ${menuOpened ? "opened" : ""}`}>
+        <div className="menu">
+          <nav>
+            <Link href="/how-airis-works">How Airis Works</Link>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/aIris-standards">Standards</Link>
+            <Link className="mob" href="/solutions">
+              Solutions
+            </Link>
+            <Link className="mob" href="/industries">
+              Industries
+            </Link>
+            <Link className="mob" href="/press-room">
+              Press Room
+            </Link>
+            <Link href="/contact-us">Contact Us</Link>
+          </nav>
+          <div className="bottom">
+            <Link href="mailto:info@airis.space">info@airis.space</Link>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

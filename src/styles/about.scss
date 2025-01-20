@@ -197,6 +197,18 @@
           height: auto;
           width: 100%;
         }
+        opacity: 1;
+        transform: scale(1);
+        .col-01 {
+          img {
+            transform: translateY(0);
+            transition: all 1s;
+          }
+        }
+        .col-02 {
+          transform: scale(1);
+          transition: all 1s;
+        }
       }
       > div {
         width: 50%;
