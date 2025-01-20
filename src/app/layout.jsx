@@ -3,6 +3,7 @@ import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const clash = localFont({
   src: [
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body style={{ fontFamily: clash.style.fontFamily }}>
+        <GoogleAnalytics gaId="G-MT1SRN8Y70" />
         <Preloader />
         <Header />
         <main>{children}</main>
