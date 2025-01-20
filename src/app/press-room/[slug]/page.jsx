@@ -7,6 +7,12 @@ import Article1Second from "./_components/Article1Second";
 import ArticleCta from "./_components/ArticleCta";
 import Article3Second from "./_components/Article3Second";
 import ArticleLast from "./_components/ArticleLast";
+import Article1Content from "./_components/Article1Content";
+import Article3Content from "./_components/Article3Content";
+import Article2Content from "./_components/Article2Content";
+import Article4Content from "./_components/Article4Content";
+import Article1Timeline from "./_components/Article1Timeline";
+import Article1Results from "./_components/Article1Results";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -70,6 +76,9 @@ const BlogSingle = async ({ params }) => {
       {slug == "boosting-call-center-efficiency-with-airis" && (
         <>
           <Article1Second />
+          <Article1Content />
+          <Article1Timeline />
+          <Article1Results />
           <ArticleCta
             text={"Ready to Achieve Similar <br/>Results for Your Business?"}
           />
@@ -88,6 +97,7 @@ const BlogSingle = async ({ params }) => {
 
       {slug == "ai-trends-in-business-process-optimization" && (
         <>
+          <Article2Content />
           <ArticleCta
             text={
               "Ready to learn more about <br/>AI-driven business process <br/>optimization?"
@@ -111,6 +121,7 @@ const BlogSingle = async ({ params }) => {
       {slug == "comparing-human-call-center-efficiency-vs-airis" && (
         <>
           <Article3Second />
+          <Article3Content />
           <ArticleCta text={"Ready to Transform <br/>Your Call Center?"} />
           <ArticleLast
             slug1={
@@ -130,6 +141,7 @@ const BlogSingle = async ({ params }) => {
       {slug ==
         "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls" && (
         <>
+          <Article4Content />
           <ArticleCta
             text={"Interested in elevating your <br/>outbound calls with AI?"}
           />
