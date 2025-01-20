@@ -1,8 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Player } from "@lottiefiles/react-lottie-player";
-import animationData from "@/lib/preloader.json"; // Import JSON animation
+import dynamic from "next/dynamic";
+
+// Dynamically import the Player component with SSR disabled
+const Player = dynamic(() => import("@lottiefiles/react-lottie-player").then(mod => mod.Player), {
+  ssr: false,
+});
 
 const Preloader = () => {
   const pathname = usePathname();
@@ -43,7 +47,7 @@ const Preloader = () => {
       }}
     >
       <Player
-        src="/images/preloader.json" // Ensure correct path
+        src="/images/preloader.json"  // Ensure this path is correct
         autoplay
         loop
         style={{ width: 100, height: 100 }}
