@@ -68,23 +68,13 @@ const Footer = () => {
             <div className="col-02">
               <div className="addresses">
                 <div>
-                  <h4>Registration Address</h4>
-                  <p>
-                    
-                  </p>
-                </div>
-                <div>
-                  <h4>Office Address</h4>
-                  <p></p>
-                </div>
-                <div>
                   <h4>Email</h4>
-                  <Link href="mailto:info@advexio.com"></Link>
+                  <Link href="mailto:info@airis.space">info@airis.space</Link>
                 </div>
-                <div>
+                {/**<div>
                   <h4>Phone</h4>
-                  <Link href="tel:+48573503926"></Link>
-                </div>
+                  <Link href="tel:"></Link>
+                </div> */}
               </div>
               <div className="soc">
                 <Link href="#">

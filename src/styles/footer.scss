@@ -92,6 +92,7 @@
       .col-02 {
         width: 50%;
         display: flex;
+        justify-content: flex-end;
         gap: rem(40);
         @media (max-width: rem(992)) {
           width: 100%;
