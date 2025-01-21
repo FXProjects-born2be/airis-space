@@ -23,9 +23,18 @@ const Row = ({ index, title, description, imageSrc }) => {
         <p>{description}</p>
       </div>
       <div className="image-wrap">
-        <motion.div
+        {/**<motion.div
           className="image-wrap-inner"
           style={{ y: translateY }} // Bind scroll-based animation
+        >
+          <Image alt={`benefit${index}`} src={imageSrc} width={770} height={368} />
+        </motion.div> */}
+        <motion.div
+          className="image-wrap-inner"
+          initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
         >
           <Image alt={`benefit${index}`} src={imageSrc} width={770} height={368} />
         </motion.div>
