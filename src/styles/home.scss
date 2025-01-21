@@ -8,14 +8,20 @@
   background-position: center;
   background-size: cover;
   min-height: calc(100dvh - rem(76));
+  display: flex;
+  align-items: center;
   @media (max-width: rem(992)) {
     background-image: url(/images/home/heroMob.png);
     min-height: calc(100dvh - rem(72));
+  }
+  ._container{
+    height: 100%;
   }
   &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     h1 {
       color: #ffffff;
       font-size: rem(72);
@@ -91,12 +97,12 @@
     display: flex;
     align-items: center;
     gap: rem(24);
-    padding: rem(120) rem(80);
+    padding: rem(40) rem(80);
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     @media (max-width: rem(992)) {
       flex-direction: column;
-      padding: rem(100) rem(16);
+      padding: rem(40) rem(16);
     }
     h2 {
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 60%);
@@ -192,7 +198,7 @@
     }
   }
   &__body {
-    padding: rem(80) 0;
+    padding: rem(40) 0;
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     position: relative;
@@ -224,6 +230,9 @@
       border-bottom: 1px solid #475569;
       margin-bottom: rem(32);
       overflow: hidden;
+      &:last-child{
+        margin-bottom: 0;
+      }
       @media (max-width: rem(992)) {
         flex-direction: column;
         img {
@@ -291,7 +300,7 @@
 
 .home-how {
   &__body {
-    padding: rem(80) 0;
+    padding: rem(40) 0;
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     position: relative;
