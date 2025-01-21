@@ -1,5 +1,11 @@
 @use "mixin" as *;
 
+main{
+  @media (max-width: rem(992)) {
+    overflow-x: hidden;
+  }
+}
+
 .solutions-hero {
   position: relative;
   z-index: 1;

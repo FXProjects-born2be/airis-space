@@ -7,8 +7,10 @@
   background-image: url(/images/home/hero.png);
   background-position: center;
   background-size: cover;
+  min-height: calc(100dvh - rem(76));
   @media (max-width: rem(992)) {
     background-image: url(/images/home/heroMob.png);
+    min-height: calc(100dvh - rem(72));
   }
   &__body {
     display: flex;
@@ -294,6 +296,9 @@
     border-right: 1px solid #475569;
     position: relative;
     z-index: 1;
+    @media (max-width: rem(992)) {
+      
+    }
     h2 {
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 60%);
       -webkit-background-clip: text;

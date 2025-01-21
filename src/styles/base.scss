@@ -564,3 +564,10 @@ body {
     }
   }
 }
+
+
+main{
+  @media (max-width: rem(992)) {
+    overflow-x: hidden;
+  }
+}
