@@ -16,9 +16,10 @@ const HomeHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            New Level of <br />
-            Communication for <br />
-            Your Business
+            Revolutionize <br />
+            Communication and <br />
+            Sales with AI-Driven <br />
+            Solutions
           </motion.h1>
           <motion.h2
             initial="hidden"
@@ -26,7 +27,8 @@ const HomeHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            AI-driven solutions to optimise call center efficiency.
+            Transform Sales Processes and Boost Efficiency with <br />
+            AI-Powered Sales Agents
           </motion.h2>
           <motion.div
             initial="hidden"

@@ -21,46 +21,50 @@ const HowWorkflow = () => {
     },
     {
       index: 3,
-      title: "AI-Powered Calling ＆Outreach",
-      description:
-        "Airis uses NLP for human-like conversations, collecting responses and ensuring continuous lead engagement.",
-      imageSrc: "/images/how/feature3.svg",
-    },
-    {
-      index: 4,
-      title: "Lead Filtering",
-      description:
-        "Leads are classified into categories: Interested, Not Interested, No Answer, Do Not Call, and Wrong Number, making it easy to prioritize follow-ups.",
-      imageSrc: "/images/how/feature4.svg",
-    },
-    {
-      index: 5,
       title: "Callback Scheduling",
       description:
         "Airis records and schedules callbacks for interested leads, ensuring timely follow-ups based on their preferences.",
       imageSrc: "/images/how/feature5.svg",
     },
     {
-      index: 6,
+      index: 4,
       title: "Live Call Transfers",
       description:
         "The system can transfer calls to a manager in real time for high-priority leads, ensuring seamless handoffs.",
       imageSrc: "/images/how/feature6.svg",
     },
     {
-      index: 7,
+      index: 5,
+      title: "Data Security",
+      description:
+        "Airis ensures your data is handled securely and used only for the agreed services, adhering to strict privacy standards.",
+      imageSrc: "/images/how/feature8.svg",
+    },
+    {
+      index: 6,
       title: "Detailed Reporting",
       description:
         "Receive clear and actionable reports, including call outcomes, lead classifications, and callback details, to inform your next steps.",
       imageSrc: "/images/how/feature7.svg",
     },
     {
-      index: 8,
-      title: "Data Security",
+      index: 7,
+      title: "AI-Powered Calling ＆Outreach",
       description:
-        "Airis ensures your data is handled securely and used only for the agreed services, adhering to strict privacy standards.",
-      imageSrc: "/images/how/feature8.svg",
+        "Airis uses NLP for human-like conversations, collecting responses and ensuring continuous lead engagement.",
+      imageSrc: "/images/how/feature3.svg",
     },
+    {
+      index: 8,
+      title: "Live Transfer and Lead Categorization",
+      description:
+        "High-intent leads are instantly transferred to your sales team for immediate action. <br/><br/>Leads are categorized as Interested, Not Interested, No Answer, Do Not Call, or Wrong Number, ensuring your team focuses on the most promising prospects.",
+      imageSrc: "/images/how/feature4.svg",
+    },
+    
+    
+    
+    
   ];
 
   return (
@@ -88,7 +92,7 @@ const HowWorkflow = () => {
                 >
                   <img src={feature.imageSrc} />
                   <h3>{feature.title}</h3>
-                  <p>{feature.description}</p>
+                  <p dangerouslySetInnerHTML={{__html: feature.description}} />
                 </motion.div>
               </div>
             ))}
