@@ -53,19 +53,20 @@ main{
       @media (max-width: rem(992)) {
         &:first-child {
           img {
-            width: rem(250);
+            width: rem(180);
             height: auto;
             bottom: unset;
-            top: 0;
+            top: unset;
+            bottom: 0;
             left: -20%;
           }
         }
         &:last-child {
           img {
-            width: rem(250);
+            width: rem(180);
             height: auto;
             bottom: unset;
-            top: 0;
+            top: -20px;
             right: -20%;
           }
         }
