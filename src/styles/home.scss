@@ -3,11 +3,11 @@
 .home-hero {
   position: relative;
   z-index: 1;
-  padding: rem(128) 0;
+  padding: rem(54) 0 rem(128) 0;
   background-image: url(/images/home/hero.png);
   background-position: center;
   background-size: cover;
-  min-height: calc(100dvh - rem(76));
+  min-height: calc(100dvh - rem(74));
   display: flex;
   align-items: center;
   @media (max-width: rem(992)) {
