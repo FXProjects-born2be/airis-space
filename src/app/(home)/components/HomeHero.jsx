@@ -37,8 +37,8 @@ const HomeHero = () => {
             variants={fadeInUp}
             className="buttons"
           >
-            <Link href="/solutions">
-              Solutions <ButtonArrow />
+            <Link href="/ai-agents">
+              How It Works <ButtonArrow />
             </Link>
             <Link href="/contact-us">
               Contact Us <ButtonArrow />

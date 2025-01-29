@@ -58,7 +58,7 @@ const Header = () => {
                 )}
               </button>
               <nav>
-                <Link href="/solutions">Solutions</Link>
+                <Link href="/ai-agents">AI Agents</Link>
                 <Link href="/industries">Industries</Link>
                 <Link href="/press-room">Press Room</Link>
               </nav>
@@ -80,12 +80,11 @@ const Header = () => {
             <Link href="/how-airis-works">How Airis Works</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/aIris-standards">Standards</Link>
-            <Link className="mob" href="/solutions">
-              Solutions
-            </Link>
+            <Link className="mob" href="/ai-agents">AI Agents</Link>
             <Link className="mob" href="/industries">
               Industries
             </Link>
+            
             <Link className="mob" href="/press-room">
               Press Room
             </Link>
