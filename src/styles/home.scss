@@ -30,6 +30,9 @@
       text-align: center;
       margin: 0 0 rem(16) 0;
       @media (max-width: rem(992)) {
+        font-size: rem(48);
+      }
+      @media (max-width: rem(767)) {
         font-size: rem(36);
       }
     }
@@ -249,6 +252,13 @@
         display: flex;
         align-items: center;
         position: relative;
+        @media (max-width: rem(1200)) {
+          height: auto;
+          width: 50%;
+          img{
+            height: auto;
+          }
+        }
         @media (max-width: rem(992)) {
           height: auto;
           width: 100%;
@@ -262,6 +272,9 @@
       }
       .col {
         width: calc(100% - rem(800));
+        @media (max-width: rem(1200)) {
+          width: 50%;
+        }
         @media (max-width: rem(992)) {
           width: 100%;
         }

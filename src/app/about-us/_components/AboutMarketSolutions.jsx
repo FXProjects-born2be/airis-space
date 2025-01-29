@@ -28,8 +28,8 @@ const AboutMarketSolutions = () => {
       console.log("scrollY", scrollY);
       console.log("wrapperStart", wrapperStart);
       // Check if .home-details is partially or fully visible
-      if (scrollY >= wrapperStart) {
-        const activeRowIndex = Math.floor((scrollY - wrapperStart + 232) / 400);
+      if (scrollY >= wrapperStart - 400) {
+        const activeRowIndex = Math.floor((scrollY - wrapperStart + 400) / 400);
         console.log("activeRowIndex", activeRowIndex);
         rows.forEach((row, index) => {
           if (index === activeRowIndex) {

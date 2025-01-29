@@ -25,12 +25,12 @@ const AboutHow = () => {
       const viewportHeight = window.innerHeight;
       const scrollY = window.scrollY;
       const wrapperStart = sliderWrapper.offsetTop;
-      console.log("scrollY", scrollY);
-      console.log("wrapperStart", wrapperStart);
+      //console.log("scrollY", scrollY);
+      //console.log("wrapperStart", wrapperStart);
       // Check if .home-details is partially or fully visible
-      if (scrollY >= wrapperStart) {
-        const activeRowIndex = Math.floor((scrollY - wrapperStart + 232) / 400);
-        console.log("activeRowIndex", activeRowIndex);
+      if (scrollY >= wrapperStart - 400) {
+        const activeRowIndex = Math.floor((scrollY - wrapperStart + 400) / 400);
+        //console.log("activeRowIndex", activeRowIndex);
         rows.forEach((row, index) => {
           if (index === activeRowIndex) {
             row.classList.add("active");
