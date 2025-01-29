@@ -50,12 +50,12 @@ const Header = () => {
         <div className="_container">
           <div className="header-row">
             <div className="col-01">
-              <button onClick={() => menuOpen()} className="menu-btn">
-                {menuOpened ? (
-                  <img src="/images/menuBtnClose.svg" />
-                ) : (
-                  <img src="/images/menuBtn.svg" />
-                )}
+              <button
+                onClick={() => menuOpen()}
+                className={`menu-btn ${menuOpened ? "active" : ""}`}
+              >
+                <span></span>
+                <span></span>
               </button>
               <nav>
                 <Link href="/ai-agents">AI Agents</Link>
@@ -80,11 +80,13 @@ const Header = () => {
             <Link href="/how-airis-works">How Airis Works</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/aIris-standards">Standards</Link>
-            <Link className="mob" href="/ai-agents">AI Agents</Link>
+            <Link className="mob" href="/ai-agents">
+              AI Agents
+            </Link>
             <Link className="mob" href="/industries">
               Industries
             </Link>
-            
+
             <Link className="mob" href="/press-room">
               Press Room
             </Link>
