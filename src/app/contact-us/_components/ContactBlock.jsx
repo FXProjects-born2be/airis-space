@@ -64,27 +64,9 @@ const ContactBlock = () => {
 
   return (
     <section className="contact-block">
-      <img src="/images/home/ellipse3.png" />
+      <img src="/images/about/ellipse1.png" />
       <div className="_container">
         <div className="contact-block__body">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="col-01"
-          >
-            <h2>
-              or via email
-              <Link href="mailto:info@airis.space">info@airis.space</Link>
-            </h2>
-            <Image
-              alt="contact"
-              src={"/images/contact/contact.png"}
-              width={545}
-              height={200}
-            />
-          </motion.div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -109,10 +91,8 @@ const ContactBlock = () => {
                   <Form>
                     {!status && (
                       <>
-                        <h2>
-                          Got a Question? <br />
-                          Let's Discuss!
-                        </h2>
+                        <h2>Contact Airis Team</h2>
+                        <p>All questions, all channels—just reach out.</p>
                         <div className="form-inner">
                           <div>
                             <Field
@@ -224,6 +204,27 @@ const ContactBlock = () => {
                 </div>
               )}
             </Formik>
+            <div className="mail">
+              <img src={"/images/contact/email.svg"} />
+              <span>
+                or via email{" "}
+                <Link href="mailto:info@airis.coms">info@airis.com</Link>
+              </span>
+            </div>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="col-01"
+          >
+            <Image
+              alt="contact"
+              src={"/images/contact/contact.png"}
+              width={545}
+              height={348}
+            />
           </motion.div>
         </div>
       </div>

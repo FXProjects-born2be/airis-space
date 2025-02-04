@@ -18,7 +18,6 @@ export const metadata = {
 const ContactPage = () => {
   return (
     <>
-      <ContactHero />
       <ContactBlock />
     </>
   );

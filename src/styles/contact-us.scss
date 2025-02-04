@@ -28,7 +28,7 @@
     img {
       position: absolute;
       right: 0;
-      bottom:0;
+      bottom: 0;
       @media (max-width: rem(992)) {
         height: auto;
         width: rem(300);
@@ -82,16 +82,10 @@
   position: relative;
   > img {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
     z-index: 0;
-    max-width: 40%;
-    &:first-child {
-      left: 0;
-      bottom: 0;
-    }
-    &:nth-child(2) {
-      right: 0;
-      top: 300px;
-    }
   }
   &__body {
     padding: rem(90) rem(40);
@@ -100,13 +94,13 @@
     position: relative;
     z-index: 1;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
     @media (max-width: rem(992)) {
       padding: rem(80) rem(16);
       background-size: contain;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     h2 {
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 60%);
@@ -116,14 +110,15 @@
       font-weight: 500;
       line-height: 1.2;
       text-align: left;
-      margin-bottom: rem(24);
+      margin-bottom: rem(4);
       @media (max-width: rem(992)) {
-        font-size: rem(48);
+        font-size: rem(36);
         width: 100%;
         br {
           //display: none;
         }
       }
+
       span {
         font-size: rem(30);
         font-weight: 400;
@@ -164,6 +159,30 @@
       }
       @media (max-width: rem(992)) {
         width: 100%;
+      }
+      p {
+        color: #fff;
+        margin-bottom: rem(24);
+        font-size: rem(14);
+      }
+      .mail {
+        display: flex;
+        align-items: center;
+        margin-top: rem(26);
+        gap: rem(8);
+        img {
+          width: rem(24);
+        }
+        span {
+          width: calc(100% - rem(32));
+          color: #fff;
+          font-size: rem(14);
+          a {
+            color: #fff;
+            text-decoration: underline;
+            font-size: rem(14);
+          }
+        }
       }
       .form-wrap {
         form {

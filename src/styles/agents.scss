@@ -52,7 +52,6 @@
             bottom: unset;
             right: -30px;
           }
-          
         }
       }
       &:nth-child(2) {
@@ -142,7 +141,6 @@
     z-index: 1;
     .title {
       padding: rem(60) rem(16) rem(32) rem(16);
-      border-bottom: 1px solid #475569;
       display: flex;
       align-items: flex-end;
       gap: rem(16);
@@ -185,8 +183,7 @@
     }
     .row {
       display: flex;
-      border-bottom: 1px solid #475569;
-      padding: rem(16) rem(16) rem(16) rem(16);
+      padding: rem(16) rem(30) rem(16) rem(30);
       gap: rem(30);
       @media (max-width: rem(992)) {
         flex-direction: column;
@@ -195,6 +192,8 @@
       .item {
         width: 33.33%;
         flex-grow: 1;
+        border: 1px solid #475569;
+        padding: rem(16);
         @media (max-width: rem(992)) {
           width: 100%;
         }
@@ -229,15 +228,32 @@
           }
         }
         ul {
-          list-style-type: disc;
-          padding-left: rem(20);
+          list-style-type: none;
+          padding-left: 0;
+          display: flex;
+          flex-direction: column;
+          gap: rem(8);
           li {
-            list-style-type: disc;
+            list-style-type: none;
             color: #ffffff;
             font-size: rem(18);
             font-weight: 400;
             line-height: 1.4;
             text-align: left;
+            position: relative;
+            padding-left: rem(32);
+            &:before {
+              content: "";
+              display: block;
+              width: rem(24);
+              height: rem(24);
+              background-image: url(/images/agents/checkmark.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              position: absolute;
+              left: 0;
+            }
           }
         }
       }
