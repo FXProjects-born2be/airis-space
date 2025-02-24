@@ -91,16 +91,16 @@
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 60%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: rem(96);
+      font-size: rem(64);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
-      margin: rem(120) 0 rem(32) 0;
+      margin: rem(64) 0 rem(32) 0;
       strong {
         font-weight: 400;
       }
       @media (max-width: rem(992)) {
-        font-size: rem(44);
+        font-size: rem(40);
         width: 100%;
         margin: rem(80) 0 rem(16) 0;
         br {
@@ -110,6 +110,9 @@
       &:first-child {
         margin-top: 0;
       }
+    }
+    strong{
+      font-weight: 600;
     }
     h3 {
       color: #ffffff;

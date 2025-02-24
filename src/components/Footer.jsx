@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-top">
             <ul className="nav">
               <li>
-              <Link href="/ai-agents">AI Agents</Link>
+                <Link href="/ai-agents">AI Agents</Link>
               </li>
               <li>
                 <Link href="/industries">Industries</Link>
@@ -65,10 +65,8 @@ const Footer = () => {
                 </div> */}
               </div>
               <div className="soc">
+                <h4>Legal</h4>
                 <Link href="/terms-of-use">Terms of Use</Link>
-                <Link href="/cookie-policy">Cookie Policy</Link>
-                <Link href="/refund-policy">Refund Policy</Link>
-                <Link href="/privacy-policy">Privacy Policy</Link>
               </div>
             </div>
           </div>
