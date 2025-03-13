@@ -25,7 +25,9 @@ const AirisInAction = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Explore how our Agent recovers lost sales.
+            Explore how our Agent recovers lost sales. an AI sales agent that
+            speaks naturally, engages leads, handles objections, schedules
+            callbacks, and transfers high-intent prospects in real time.
           </motion.p>
           <ReactPlayer
             url="/air_demo.mp4"
