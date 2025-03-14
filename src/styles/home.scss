@@ -568,6 +568,10 @@
       @media (max-width: rem(992)) {
         width: 100%!important;
         height: 200px!important;
+        img{
+          width: 121px;
+          height: 48px;
+        }
       }
     }
   }
