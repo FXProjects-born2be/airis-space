@@ -7,13 +7,13 @@ import BusinessEthics from "./_components/BusinessEthics";
 import StoriesLoop from "./_components/StoriesLoop";
 
 export const metadata = {
-  title: "AI Sales Agents | Airis",
+  title: "Success Stories | Airis",
   description:
-    "Discover how AI-powered sales agents from AIris revolutionize lead engagement. Communicate in any language, optimize sales processes, and maximize conversions with seamless automation and real-time lead handling.",
+    "See how Airis helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
   openGraph: {
-    title: "AI Sales Agents | Airis",
+    title: "Success Stories | Airis",
     description:
-      "Discover how AI-powered sales agents from AIris revolutionize lead engagement. Communicate in any language, optimize sales processes, and maximize conversions with seamless automation and real-time lead handling.",
+      "See how Airis helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
     images: "https://airis.space/images/meta.png",
   },
 };

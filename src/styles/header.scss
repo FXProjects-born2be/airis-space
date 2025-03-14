@@ -75,20 +75,28 @@ header {
       &.col-01 {
         display: flex;
         align-items: center;
-        gap: rem(20);
+        gap: rem(15);
+        width: 35%;
+        @media (max-width: rem(1200)) {
+          width: 40%;
+        }
         nav {
           display: flex;
           align-items: center;
-          gap: rem(20);
+          gap: rem(15);
+          
           @media (max-width: rem(992)) {
             display: none;
           }
           a {
             color: #ffffff;
-            font-size: rem(16);
+            font-size: rem(15);
             font-weight: 400;
             line-height: 1;
             text-align: left;
+            @media (max-width: rem(1200)) {
+              font-size: rem(14);
+            }
           }
         }
       }
@@ -96,11 +104,19 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 30%;
+        @media (max-width: rem(1200)) {
+          width: 20%;
+        }
       }
       &.col-03 {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        width: 35%;
+        @media (max-width: rem(1200)) {
+          width: 40%;
+        }
         a {
           color: #ffffff;
           font-size: rem(16);

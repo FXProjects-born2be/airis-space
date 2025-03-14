@@ -59,7 +59,7 @@ const Header = () => {
               </button>
               <nav>
                 <Link href="/ai-agents">AI Agents</Link>
-
+                <Link href="/success-stories">Success Stories</Link>
                 <Link href="/industries">Industries</Link>
                 <Link href="/press-room">Press Room</Link>
               </nav>
@@ -78,12 +78,14 @@ const Header = () => {
       <div className={`menu-wrap ${menuOpened ? "opened" : ""}`}>
         <div className="menu">
           <nav>
-            <Link href="/success-stories">Success Stories</Link>
             <Link href="/how-airis-works">How Airis Works</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/aIris-standards">Standards</Link>
             <Link className="mob" href="/ai-agents">
               AI Agents
+            </Link>
+            <Link className="mob" href="/success-stories">
+              Success Stories
             </Link>
             <Link className="mob" href="/industries">
               Industries
