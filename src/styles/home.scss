@@ -565,6 +565,10 @@
     .video {
       border-top: 0.5px solid #475569;
       border-bottom: 0.5px solid #475569;
+      @media (max-width: rem(992)) {
+        width: 100%!important;
+        height: 200px!important;
+      }
     }
   }
 }
