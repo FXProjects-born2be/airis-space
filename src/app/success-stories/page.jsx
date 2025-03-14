@@ -24,7 +24,7 @@ const page = () => {
       <AgentsHero />
       <StoriesLoop />
       <ContactUs
-        image="/images/stories/contact.png"
+        image="/images/stories/contact.webp"
         title="<span>Have Questions?</span> Contact Us!"
       />
     </>
