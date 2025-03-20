@@ -19,30 +19,33 @@ const AirisInAction = () => {
           >
             See AIris in Action
           </motion.h2>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            Explore how our Agent recovers lost sales. an AI sales agent that
-            speaks naturally, engages leads, handles objections, schedules
-            callbacks, and transfers high-intent prospects in real time.
-          </motion.p>
-          <ReactPlayer
-            url="/air_demo.mp4"
-            light={"/images/home/airis-in-action.png"}
-            controls
-            playIcon={
-              <img width={154} height={72} src="/images/playIcon.svg" />
-            }
-            playing
-            loop={true}
-            className="video"
-            width={1170}
-            height={658}
-            controlsList="nodownload nofullscreen"
-          />
+
+          <div className="video-wrapper">
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              Explore how our Agent recovers lost sales. an AI sales agent that
+              speaks naturally, engages leads, handles objections, schedules
+              callbacks, and transfers high-intent prospects in real time.
+            </motion.p>
+            <ReactPlayer
+              url="/air_demo.mp4"
+              light={"/images/home/airis-in-action.png"}
+              controls
+              playIcon={
+                <img width={154} height={72} src="/images/playIcon.svg" />
+              }
+              playing
+              loop={true}
+              className="video"
+              width={820}
+              height={460}
+              controlsList="nodownload nofullscreen"
+            />
+          </div>
         </div>
       </div>
     </section>
