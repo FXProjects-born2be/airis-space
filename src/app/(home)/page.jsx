@@ -14,10 +14,11 @@ export default function Home() {
     <>
       <HomeHero />
       <HomeWhatIs />
+      <AirisInAction />
       <HomeBenefits />
       <ProvenResults />
       <HomeHow />
-      <AirisInAction />
+
       <WhatBusinessSay />
       <HomePrivacy />
       <ContactUs image="/images/home/contact.png" />

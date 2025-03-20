@@ -202,7 +202,7 @@
   }
   &__body {
     padding: rem(40) 0;
-    border-top: 1px solid #475569;
+    //border-top: 1px solid #475569;
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     position: relative;
@@ -528,12 +528,14 @@
     max-width: 60%;
   }
   &__body {
-    padding: rem(40) 0;
+    padding: rem(100) 0 rem(40);
+    border-top: 1px solid #475569;
     border-left: 1px solid #475569;
     border-right: 1px solid #475569;
     position: relative;
     z-index: 1;
     @media (max-width: rem(992)) {
+      padding: rem(40) 0 rem(40);
     }
     h2 {
       background: linear-gradient(91.06deg, #636361 2.26%, #f9f9fa 60%);
