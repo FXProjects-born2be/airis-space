@@ -17,11 +17,11 @@ const ArticleLast = ({ img1, title1, slug1, img2, title2, slug2 }) => {
             variants={fadeInUp}
             className="row"
           >
-            <Link href={`/press-room/${slug1}`}>
+            <Link href={`/cases/${slug1}`}>
               <Image alt="article1" src={img1} width={250} height={250} />
               <h2 dangerouslySetInnerHTML={{ __html: title1 }} />
             </Link>
-            <Link href={`/press-room/${slug2}`}>
+            <Link href={`/cases/${slug2}`}>
               <Image alt="article1" src={img2} width={250} height={250} />
               <h2 dangerouslySetInnerHTML={{ __html: title2 }} />
             </Link>

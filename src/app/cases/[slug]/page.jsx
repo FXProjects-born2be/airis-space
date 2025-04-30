@@ -13,6 +13,8 @@ import Article2Content from "./_components/Article2Content";
 import Article4Content from "./_components/Article4Content";
 import Article1Timeline from "./_components/Article1Timeline";
 import Article1Results from "./_components/Article1Results";
+import Article4Second from "./_components/Article4Second";
+import Article2Second from "./_components/Article2Second";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -73,7 +75,7 @@ const BlogSingle = async ({ params }) => {
         short={post.short_description}
       />
 
-      {slug == "boosting-call-center-efficiency-with-airis" && (
+      {slug == "case-study-financial-firm-transforms-call-center" && (
         <>
           <Article1Second />
           <Article1Content />
@@ -83,20 +85,21 @@ const BlogSingle = async ({ params }) => {
             text={"Ready to Achieve Similar <br/>Results for Your Business?"}
           />
           <ArticleLast
-            slug1={"ai-trends-in-business-process-optimization"}
+            slug1={"case-study-boosting-direct-sales-conversions-with-airis"}
             title1={
-              "AI Trends in Business Process Optimization 2025 and Beyond"
+              "Case Study: <br/>Boosting Direct Sales Conversions with Airis"
             }
             img1={"/images/blog/article3.png"}
-            slug2={"comparing-human-call-center-efficiency-vs-airis"}
-            title2={"Case Study: Human vs. Airis"}
+            slug2={"case-study-human-vs-airis"}
+            title2={"Case Study: <br/>Human vs. Airis"}
             img2={"/images/blog/article2.png"}
           />
         </>
       )}
 
-      {slug == "ai-trends-in-business-process-optimization" && (
+      {slug == "case-study-boosting-direct-sales-conversions-with-airis" && (
         <>
+          <Article2Second />
           <Article2Content />
           <ArticleCta
             text={
@@ -104,54 +107,50 @@ const BlogSingle = async ({ params }) => {
             }
           />
           <ArticleLast
-            slug1={"comparing-human-call-center-efficiency-vs-airis"}
-            title1={"Case Study: Human vs. Airis"}
+            slug1={"case-study-human-vs-airis"}
+            title1={"Case Study: <br/>Human vs. Airis"}
             img1={"/images/blog/article2.png"}
-            slug2={
-              "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls"
-            }
+            slug2={"case-study-increasing-appointment-rates-in-home-services"}
             title2={
-              "How AI Outbound Call Centers Elevate Customer Satisfaction"
+              "Case Study: <br/>Increasing Appointment Rates in Home Services"
             }
             img2={"/images/blog/article4.png"}
           />
         </>
       )}
 
-      {slug == "comparing-human-call-center-efficiency-vs-airis" && (
+      {slug == "case-study-human-vs-airis" && (
         <>
           <Article3Second />
           <Article3Content />
           <ArticleCta text={"Ready to Transform <br/>Your Call Center?"} />
           <ArticleLast
-            slug1={
-              "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls"
-            }
+            slug1={"case-study-boosting-direct-sales-conversions-with-airis"}
             title1={
-              "How AI Outbound Call Centers Elevate Customer Satisfaction"
+              "Case Study: <br/>Boosting Direct Sales Conversions with Airis"
             }
             img1={"/images/blog/article4.png"}
-            slug2={"boosting-call-center-efficiency-with-airis"}
-            title2={"Case Study: Financial Firm Transforms Call Center "}
+            slug2={"case-study-financial-firm-transforms-call-center"}
+            title2={"Case Study: <br/>Financial Firm Transforms Call Center "}
             img2={"/images/blog/article1.png"}
           />
         </>
       )}
 
-      {slug ==
-        "how-ai-call-centers-improve-customer-experience-and-satisfaction-through-outbound-calls" && (
+      {slug == "case-study-increasing-appointment-rates-in-home-services" && (
         <>
+          <Article4Second />
           <Article4Content />
           <ArticleCta
             text={"Interested in elevating your <br/>outbound calls with AI?"}
           />
           <ArticleLast
-            slug1={"boosting-call-center-efficiency-with-airis"}
-            title1={"Case Study: Financial Firm Transforms Call Center "}
+            slug1={"case-study-financial-firm-transforms-call-center"}
+            title1={"Case Study: <br/>Financial Firm Transforms Call Center "}
             img1={"/images/blog/article1.png"}
-            slug2={"ai-trends-in-business-process-optimization"}
+            slug2={"case-study-boosting-direct-sales-conversions-with-airis"}
             title2={
-              "AI Trends in Business Process Optimization 2025 and Beyond"
+              "Case Study: <br/>Boosting Direct Sales Conversions with Airis"
             }
             img2={"/images/blog/article3.png"}
           />

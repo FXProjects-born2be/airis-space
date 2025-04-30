@@ -6,5 +6,6 @@ excerpt: "By integrating Airis, a mid-sized financial services company reduced o
 seo_title: "Boosting Call Center Efficiency Case Study | Airis"
 seo_description: "Discover how AIris enhances call center efficiency by automating calls, filtering leads, and optimizing outreach. Learn how AI improves productivity and reduces costs."
 thumbnail: "/images/blog/article1.png"
+short_description: "Company: Brightstone Financial, Financial Services"
 ---
 

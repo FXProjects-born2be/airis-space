@@ -17,10 +17,11 @@ const Article3Second = () => {
           >
             <h2>Background</h2>
             <p>
-              A mid-sized telecommunications company ran a traditional call
-              center with over 40 human operators. Despite ongoing training and
-              performance reviews, they consistently struggled with high labor
-              costs, agent burnout, and missed opportunities in lead follow-ups.
+              Skywave Telecom, a mid-sized telecommunications company ran a
+              traditional call center with over 40 human operators. Despite
+              ongoing training and performance reviews, they consistently
+              struggled with high labor costs, agent burnout, and missed
+              opportunities in lead follow-ups.
             </p>
           </motion.div>
           <motion.div

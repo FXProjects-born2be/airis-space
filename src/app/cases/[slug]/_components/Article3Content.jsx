@@ -126,7 +126,7 @@ const Article3Content = () => {
                 variants={fadeInUp}
                 className="block"
               >
-                <h4>Human Call Center Group</h4>
+                <h4>Human Call Center Group at Skywave Telecom</h4>
                 <div className="table">
                   <div>
                     <span>01</span>
@@ -220,8 +220,7 @@ const Article3Content = () => {
               >
                 <img src="/images/logo.svg" />
                 <p>
-                  Human Call <br />
-                  Center
+                Human <br />Call Center <br />Skywave Telecom
                 </p>
               </motion.div>
               <motion.div

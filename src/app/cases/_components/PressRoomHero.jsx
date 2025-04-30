@@ -17,7 +17,7 @@ const PressRoomHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Press Room
+              Cases
             </motion.h1>
             <motion.h2
               initial="hidden"
@@ -25,15 +25,15 @@ const PressRoomHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Stay updated on Airis news and insights.
+              Discover how companies boost sales and cut costs with Airis
             </motion.h2>
           </div>
           <Image
-              alt="hero1"
-              src={"/images/blog/hero.png"}
-              width={581}
-              height={435}
-            />
+            alt="hero1"
+            src={"/images/blog/hero.png"}
+            width={581}
+            height={435}
+          />
         </div>
       </div>
     </section>

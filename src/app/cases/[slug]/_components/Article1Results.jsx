@@ -28,9 +28,9 @@ const Article1Results = () => {
 
               <p>
                 <b>Reduction in Operational Costs</b>
-                The firm significantly cut down on agent hours devoted to
-                repetitive tasks by automating the initial calling and lead
-                filtering.
+                Brightstone Financial significantly cut down on agent hours
+                devoted to repetitive tasks by automating the initial calling
+                and lead filtering.
               </p>
             </motion.div>
             <motion.div
@@ -99,11 +99,11 @@ const Article1Results = () => {
                 increasing overhead costs.
                 <br />
                 <br />
-                Through Airis, this financial services firm transformed its call
-                center from a cost-heavy, manual operation into a lean,
-                high-performing system. Agents now spend more time closing deals
-                and nurturing interested leads, while Airis continuously
-                generates detailed insights to improve the sales process.
+                Through Airis, Brightstone Financial transformed its call center
+                from a cost-heavy, manual operation into a lean, high-performing
+                system. Agents now spend more time closing deals and nurturing
+                interested leads, while Airis continuously generates detailed
+                insights to improve the sales process.
               </p>
             </motion.div>
           </div>

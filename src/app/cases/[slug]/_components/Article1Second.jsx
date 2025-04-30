@@ -17,12 +17,12 @@ const Article1Second = () => {
           >
             <h2>Challenge</h2>
             <p>
-              A growing financial services firm faced rising operational costs
-              due to a manually operated call center. Their agents spent hours
-              each day calling leads who were often uninterested, leading to low
-              productivity and high burnout rates. The firm also struggled with
-              missed follow-ups, as it was challenging to manually track all
-              potential callbacks.
+              Brightstone Financial. a growing financial services firm faced
+              rising operational costs due to a manually operated call center.
+              Their agents spent hours each day calling leads who were often
+              uninterested, leading to low productivity and high burnout rates.
+              The firm also struggled with missed follow-ups, as it was
+              challenging to manually track all potential callbacks.
             </p>
           </motion.div>
           <motion.div

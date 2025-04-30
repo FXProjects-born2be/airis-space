@@ -38,8 +38,8 @@ const Article1Content = () => {
                 <div>
                   <span>01</span>
                   <p>
-                    The firm uploaded its lead database (over 20,000 contacts)
-                    segmented by region and service interest.
+                    Brightstone Financial uploaded its lead database (over
+                    20,000 contacts) segmented by region and service interest.
                   </p>
                 </div>
                 <div>
@@ -146,12 +146,10 @@ const Article1Content = () => {
                 <div>
                   <span>02</span>
                   <ul>
-                      <li>Lead classification outcomes</li>
-                      <li>Call recordings for leads marked as “Interested”</li>
-                      <li>
-                        Organized callback times for easier agent follow-up
-                      </li>
-                    </ul>
+                    <li>Lead classification outcomes</li>
+                    <li>Call recordings for leads marked as “Interested”</li>
+                    <li>Organized callback times for easier agent follow-up</li>
+                  </ul>
                 </div>
               </div>
             </motion.div>

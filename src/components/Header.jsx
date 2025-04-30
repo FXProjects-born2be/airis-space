@@ -61,7 +61,7 @@ const Header = () => {
                 <Link href="/ai-agents">AI Agents</Link>
                 <Link href="/success-stories">Success Stories</Link>
                 <Link href="/industries">Industries</Link>
-                <Link href="/press-room">Press Room</Link>
+                <Link href="/cases">Cases</Link>
               </nav>
             </div>
             <div className="col-02">
@@ -91,8 +91,8 @@ const Header = () => {
               Industries
             </Link>
 
-            <Link className="mob" href="/press-room">
-              Press Room
+            <Link className="mob" href="/cases">
+              Cases
             </Link>
             <Link href="/contact-us">Contact Us</Link>
           </nav>
