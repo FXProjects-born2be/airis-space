@@ -4,9 +4,9 @@ export const stories = [
     title: "Success Story of E-Commerce Company",
     subtitle: "Recovering <br/>Abandoned Carts <br/>& Maximizing Sales",
     challenge:
-      "A fast-growing e-commerce retailer struggled with a high cart abandonment rate, leading to 40,000+ lost leads per quarter. Despite significant ad spending, the CPA was too high, and manual follow-ups proved inefficient.",
+      "Modexa Retail, a fast-growing e-commerce retailer struggled with a high cart abandonment rate, leading to 40,000+ lost leads per quarter. Despite significant ad spending, the CPA was too high, and manual follow-ups proved inefficient.",
     takeway:
-      "With Airis automatically handling abandoned cart recovery and price objections, The company significantly increased conversions, lowered customer acquisition costs and boosted revenue without adding manual effort.",
+      "With Airis automatically handling abandoned cart recovery and price objections, Modexa Retail significantly increased conversions, lowered customer acquisition costs and boosted revenue without adding manual effort.",
     solution:
       "Airis AI sales agents integration to automate follow-ups, recover abandoned carts, and handle price objections. AI-driven conversations were personalized, addressing customer concerns and guiding them back to completing their purchase.",
     metrics: [
@@ -19,7 +19,7 @@ export const stories = [
     results: [
       "Re-engaged Leads: 40,000 abandoned carts",
       "Recovered Sales: +27% increase in completed purchases",
-      "Cost Per Customer Acquisition: Reduced from €40 to $26 (35% decrease)",
+      "Cost Per Customer Acquisition: Reduced from €40 to €26 (35% decrease)",
       "Revenue Growth: €750,000 additional revenue from recovered customers",
       "Operational Efficiency: Eliminated the need for a 6-person manual follow-up team",
     ],
@@ -30,9 +30,9 @@ export const stories = [
     title: "Success Story of SaaS Company",
     subtitle: "Reducing Churn & <br/>Increasing Trial <br/>Conversions",
     challenge:
-      "A SaaS provider struggled with high churn rates among trial users. Many signed up for the free trial but never converted to paid plans. Manual follow-ups were inconsistent, and sales reps couldn't effectively re-engage inactive users at scale.",
+      "Normand Digital, a SaaS provider struggled with high churn rates among trial users. Many signed up for the free trial but never converted to paid plans. Manual follow-ups were inconsistent, and sales reps couldn't effectively re-engage inactive users at scale.",
     takeway:
-      "By automating trial follow-ups and addressing common objections in real-time, Airis helped the company reduce churn, increase conversions, and recover millions in lost revenue—all with no extra workload for their sales team.",
+      "By automating trial follow-ups and addressing common objections in real-time, Airis helped the Normand Digital company reduce churn, increase conversions, and recover millions in lost revenue—all with no extra workload for their sales team.",
     solution: `The company integrated Airis AI sales agents to identify and follow up with inactive trial users. AI-driven outreach included:
       <ul>
       <li><b>Personalized reminders</b> about trial benefits and expiration dates.</li>
@@ -61,10 +61,10 @@ export const stories = [
     subtitle:
       "Tripling <br/>Appointment <br/>Bookings with AI-<br/>Driven Outreach",
     challenge:
-      "A real estate agency faced low appointment booking rates despite generating a high volume of leads through ads and website inquiries. Agents' manual follow-ups were slow and inconsistent, leading to missed opportunities and lost sales.",
+      "Primex Realty Group, a real estate agency faced low appointment booking rates despite generating a high volume of leads through ads and website inquiries. Agents' manual follow-ups were slow and inconsistent, leading to missed opportunities and lost sales.",
     takeway:
-      "By automating lead follow-ups and appointment scheduling, Airis helped the company convert more inquiries into booked meetings, reduce response time, and drive higher sales—without adding extra workload to their team.",
-    solution: `The company integrated Airis AI sales agents to automate lead outreach, schedule appointments, and prioritize high-intent prospects. AI-driven calls:
+      "By automating lead follow-ups and appointment scheduling, Airis helped Primex Realty Group convert more inquiries into booked meetings, reduce response time, and drive higher sales—without adding extra workload to their team.",
+    solution: `Primex Realty Group  integrated Airis AI sales agents to automate lead outreach, schedule appointments, and prioritize high-intent prospects. AI-driven calls:
       <ul>
       <li>Engaged new leads instantly after an inquiry.</li>
       <li>Handled objections and answered common questions.</li>
