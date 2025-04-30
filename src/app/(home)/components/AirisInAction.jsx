@@ -6,9 +6,20 @@ import dynamic from "next/dynamic";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
+const CustomAudioPlayer = () => {
+  return (
+    <audio
+      src="/Luca_Script.wav"
+      controls
+      className="custom-audio-player"
+      controlsList="noplaybackrate nodownload"
+    />
+  );
+};
+
 const AirisInAction = () => {
   return (
-    <section className="airis-in-action ">
+    <section className="airis-in-action">
       <div className="_container">
         <div className="airis-in-action__body">
           <motion.h2
@@ -31,7 +42,11 @@ const AirisInAction = () => {
             ensures natural, engaging conversations for better conversion rates.
           </motion.p>
 
-          <div className="video-wrapper">
+          <div className="audio-wrapper">
+            <CustomAudioPlayer />
+          </div>
+
+          <div className="video-wrapper" style={{ display: "none" }}>
             <ReactPlayer
               url="/air_demo.mp4"
               light={"/images/home/airis-in-action.png"}

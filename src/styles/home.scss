@@ -574,6 +574,69 @@
         border-bottom: 0.5px solid #475569;
       }
     }
+
+    .audio-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: rem(24);
+      .custom-audio-player {
+        width: 572px;
+        max-width: 100%;
+        background: transparent;
+        border: none;
+        &::-webkit-media-controls-enclosure{
+          background-color: #242742;
+          overflow: hidden;
+          border-radius: 28px;
+        }
+        &::-webkit-media-controls-panel {
+          background-color: #242742;
+
+        }
+        &::-webkit-media-controls-current-time-display {
+          color: #fff;
+          text-shadow: unset;
+        }
+        &::-webkit-media-controls-time-remaining-display {
+          color: #fff;
+          text-shadow: unset;
+        }
+        &::-webkit-media-controls-play-button {
+          fill: #fff !important;
+          color: #fff !important;
+        }
+        &::-webkit-media-controls-pause-button {
+          color: #fff;
+        }
+        &::-webkit-media-controls-timeline {
+          color: #fff;
+        }
+      }
+    }
+
+    .custom-audio-player::-webkit-media-controls-play-button,
+    .custom-audio-player::-webkit-media-controls-mute-button,
+    .custom-audio-player::-webkit-media-controls-volume-slider,
+    .custom-audio-player::-webkit-media-controls-timeline,
+    .custom-audio-player::-webkit-media-controls-current-time-display,
+    .custom-audio-player::-webkit-media-controls-time-remaining-display {
+      /* make icons/text white */
+      filter: brightness(0) invert(1);
+      color: #fff;
+    }
+
+    .custom-audio-player::-webkit-media-controls-timeline-container {
+      background-color: #4b4b78;
+      border-radius: 4px;
+    }
+
+
+    
+  
+    /* volume slider “thumb” & track color (new in modern browsers) */
+    .custom-audio-player::-webkit-media-controls-volume-slider {
+      accent-color: #646cff;
+    }
     .video-wrapper {
       display: flex;
       border-top: 0.5px solid #475569;
