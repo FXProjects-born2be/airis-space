@@ -12,9 +12,6 @@ const Footer = () => {
           <div className="footer-top">
             <ul className="nav">
               <li>
-                <Link href="/ai-agents">AI Agents</Link>
-              </li>
-              <li>
                 <Link href="/industries">Industries</Link>
               </li>
               <li>

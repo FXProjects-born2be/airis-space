@@ -34,10 +34,6 @@ const HomeWhatIs = () => {
               intelligent calling, automatic lead filtering, and real-time
               insights.
             </p>
-            <Link href="/ai-agents">
-              Explore Sales Process
-              <ButtonArrow />
-            </Link>
           </motion.div>
         </div>
       </div>
