@@ -60,7 +60,6 @@ const Header = () => {
               <nav>
                 <Link href="/success-stories">Success Stories</Link>
                 <Link href="/industries">Industries</Link>
-                <Link href="/cases">Cases</Link>
               </nav>
             </div>
             <div className="col-02">
@@ -87,9 +86,6 @@ const Header = () => {
               Industries
             </Link>
 
-            <Link className="mob" href="/cases">
-              Cases
-            </Link>
             <Link href="/contact-us">Contact Us</Link>
           </nav>
           <div className="bottom">

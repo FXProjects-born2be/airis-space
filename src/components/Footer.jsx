@@ -21,9 +21,6 @@ const Footer = () => {
                 <Link href="/how-airis-works">How Airis Works</Link>
               </li>
               <li>
-                <Link href="/cases">Cases</Link>
-              </li>
-              <li>
                 <Link href="/work-at-airis">Careers</Link>
               </li>
               <li>
