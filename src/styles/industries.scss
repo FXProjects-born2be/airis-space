@@ -6,6 +6,22 @@ main{
   }
 }
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+
+.industries-page {
+  background-image: url("/images/industries/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
+}
+
 .industries-hero {
   position: relative;
   z-index: 1;

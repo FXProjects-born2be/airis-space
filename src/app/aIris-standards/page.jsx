@@ -18,14 +18,14 @@ export const metadata = {
 
 const Standarts = () => {
   return (
-    <>
+    <main className="standarts-page">
       <StandartsHero />
       <StandartsLoop />
       <ContactUs
         image="/images/standarts/contact.png"
         title="<span>Have Questions?</span> Contact Us!"
       />
-    </>
+    </main>
   );
 };
 

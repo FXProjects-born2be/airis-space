@@ -1,5 +1,20 @@
 @use "mixin" as *;
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+.work-at-airis-page {
+  background-image: url("/images/work/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
+}
+
 .work-hero {
   position: relative;
   z-index: 1;
@@ -12,6 +27,7 @@
     transform: translateX(-50%);
     top: -80px;
     z-index: 0;
+    display: none;
   }
   &__image {
     margin-top: rem(40);

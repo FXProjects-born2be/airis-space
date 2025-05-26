@@ -20,14 +20,14 @@ export const metadata = {
 
 const page = () => {
   return (
-    <>
+    <main className="stories-page">
       <AgentsHero />
       <StoriesLoop />
       <ContactUs
         image="/images/stories/contact.webp"
         title="<span>Have Questions?</span> Contact Us!"
       />
-    </>
+    </main>
   );
 };
 

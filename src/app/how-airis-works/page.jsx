@@ -18,14 +18,14 @@ export const metadata = {
 
 const HowWorks = () => {
   return (
-    <>
+    <main className="how-airis-works-page">
       <HowWorksHero />
       <HowWorkflow />
       <ContactUs
         image="/images/how/contact.png"
         title="Discover how Airis can assist your business. <span>Contact us for more information!</span>"
       />
-    </>
+    </main>
   );
 };
 

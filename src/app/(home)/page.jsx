@@ -11,7 +11,7 @@ import AirisInAction from "./components/AirisInAction";
 
 export default function Home() {
   return (
-    <>
+    <main className="home-page">
       <HomeHero />
       <HomeWhatIs />
       <AirisInAction />
@@ -22,6 +22,6 @@ export default function Home() {
       <WhatBusinessSay />
       <HomePrivacy />
       <ContactUs image="/images/home/contact.png" />
-    </>
+    </main>
   );
 }

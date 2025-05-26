@@ -17,9 +17,9 @@ export const metadata = {
 
 const ContactPage = () => {
   return (
-    <>
+    <main className="contact-us-page">
       <ContactBlock />
-    </>
+    </main>
   );
 };
 

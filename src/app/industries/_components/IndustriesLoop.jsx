@@ -140,8 +140,8 @@ const IndustriesLoop = () => {
 
   return (
     <section className="industries-loop">
-      <img src="/images/home/ellipse2.png" />
-      <img src="/images/home/ellipse3.png" />
+      {/* <img src="/images/home/ellipse2.png" />
+      <img src="/images/home/ellipse3.png" /> */}
       <div className="_container">
         <div className="industries-loop__body">
           <div className="wrap">

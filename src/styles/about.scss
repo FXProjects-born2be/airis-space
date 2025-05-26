@@ -1,10 +1,42 @@
 @use "mixin" as *;
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+
+.about-us-page {
+  background-image: url("/images/about/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
+}
+
 .about-hero {
   position: relative;
   z-index: 1;
   padding: rem(128) 0;
-  overflow: hidden;
+  //overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 1300px;
+    background: #000;
+    border-radius: 960.703px;
+    background: rgba(13, 6, 222, 0.8);
+    filter: blur(500px);
+    opacity: 0;
+    z-index: 0;
+  }
+
   @media (max-width: rem(992)) {
     padding: rem(116) 0;
   }
@@ -139,7 +171,7 @@
       }
       @media (max-width: rem(992)) {
         font-size: rem(16);
-        br{
+        br {
           display: none;
         }
       }
@@ -153,6 +185,7 @@
     position: absolute;
     z-index: 0;
     max-width: 60%;
+    display: none;
     &:first-child {
       right: 0;
       top: -140px;

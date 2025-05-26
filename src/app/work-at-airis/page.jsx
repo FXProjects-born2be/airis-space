@@ -20,7 +20,7 @@ export const metadata = {
 
 const WorkAtAiris = () => {
   return (
-    <>
+    <main className="work-at-airis-page">
       <WorkHero />
       <WorkLoop />
       <WorkCta />
@@ -29,7 +29,7 @@ const WorkAtAiris = () => {
         title="<span>Have Questions?</span> Contact Us!"
       />
       <JobPopup />
-    </>
+    </main>
   );
 };
 

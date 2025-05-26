@@ -1,5 +1,21 @@
 @use "mixin" as *;
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+
+.contact-us-page {
+  background-image: url("/images/contact/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
+}
+
 .contact-hero {
   position: relative;
   z-index: 1;

@@ -1,5 +1,21 @@
 @use "mixin" as *;
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+
+.stories-page {
+  background-image: url("/images/stories/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
+}
+
 .stories-hero {
   position: relative;
   z-index: 1;
@@ -14,6 +30,7 @@
     transform: translateX(-50%);
     top: -80px;
     z-index: 0;
+    display: none;
   }
   &__body {
     display: flex;
@@ -116,6 +133,7 @@
     position: absolute;
     z-index: 0;
     max-width: 65%;
+    display: none;
     &:first-child {
       right: 0;
       top: 300px;

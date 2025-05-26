@@ -7,7 +7,7 @@ import Image from "next/image";
 const IndustriesHero = () => {
   return (
     <section className="industries-hero">
-      <img src="/images/about/ellipse1.png" />
+      {/* <img src="/images/about/ellipse1.png" /> */}
       <div className="_container">
         <div className="industries-hero__body">
           <motion.div

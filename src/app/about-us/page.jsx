@@ -21,14 +21,14 @@ export const metadata = {
 
 const AboutUs = () => {
   return (
-    <>
+    <main className="about-us-page">
       <AboutHero />
       <AboutSecond />
       <AboutMarketSolutions />
       <AboutHow />
       <AboutMission />
       <ContactUs image="/images/about/contact.png" />
-    </>
+    </main>
   );
 };
 

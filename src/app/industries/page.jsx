@@ -18,14 +18,14 @@ export const metadata = {
 
 const Industries = () => {
   return (
-    <>
+    <main className="industries-page">
       <IndustriesHero />
       <IndustriesLoop />
       <ContactUs
         image="/images/industries/contact.png"
         title="Discover AIris solutions for your business!<span>Contact us today!</span>"
       />
-    </>
+    </main>
   );
 };
 

@@ -1,9 +1,24 @@
 @use "mixin" as *;
 
-main{
+main {
   @media (max-width: rem(992)) {
     overflow-x: hidden;
   }
+}
+
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
+
+.how-airis-works-page {
+  background-image: url("/images/how/gradient.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: rem(74);
+  margin-top: -74px;
 }
 
 .how-airis-works-hero {
