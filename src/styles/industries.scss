@@ -116,6 +116,9 @@ header {
       }
       @media (max-width: rem(992)) {
         font-size: rem(36);
+      }
+      @media (max-width: rem(767)) {
+        font-size: rem(36);
         br {
           display: block;
         }
