@@ -1,7 +1,17 @@
 @use "mixin" as *;
 
+header {
+  &:not(.active) {
+    background: transparent;
+  }
+}
 
-
+.home-page {
+  background-image: url("/images/home/gradient.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .home-hero {
   position: relative;
   z-index: 1;
@@ -94,14 +104,6 @@
 .home-what {
   position: relative;
 
-  > img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
-    max-width: 60%;
-  }
   &__body {
     position: relative;
     z-index: 1;
@@ -214,7 +216,7 @@
     border-radius: 960.703px;
     background: rgba(13, 6, 222, 0.8);
     filter: blur(500px);
-    opacity: 0.7;
+    opacity: 0;
     z-index: 0;
   }
 
@@ -341,6 +343,7 @@
     transform: translateY(-50%);
     z-index: 0;
     max-width: 60%;
+    display: none;
   }
   &__body {
     padding: rem(40) 0;
@@ -451,6 +454,7 @@
     right: 0;
     top: -750px;
     width: 100%;
+    display: none;
   }
 
   &__body {
@@ -557,7 +561,7 @@
     border-radius: 960.703px;
     background: rgba(13, 6, 222, 0.8);
     filter: blur(500px);
-    opacity: 0.7;
+    opacity: 0;
     z-index: 0;
   }
 
@@ -723,7 +727,7 @@
     border-radius: 960.703px;
     background: rgba(195, 94, 245, 0.8);
     filter: blur(500px);
-    opacity: 0.5;
+    opacity: 0;
     z-index: 0;
   }
   &__body {
@@ -861,7 +865,7 @@
     border-radius: 960.703px;
     background: rgba(13, 6, 222, 0.8);
     filter: blur(500px);
-    opacity: 0.9;
+    opacity: 0;
     z-index: 0;
   }
   &__body {
