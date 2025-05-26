@@ -3,6 +3,7 @@ import React from "react";
 import "@/styles/policy.scss";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export async function generateStaticParams() {
   const slugs = await getPageSlugs();
@@ -73,6 +74,7 @@ const TermsAndConditions = async () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

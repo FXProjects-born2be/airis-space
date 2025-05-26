@@ -8,6 +8,7 @@ import ContactUs from "@/components/ContactUs";
 import ProvenResults from "./components/ProvenResults";
 import WhatBusinessSay from "./components/WhatBusinessSay";
 import AirisInAction from "./components/AirisInAction";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <WhatBusinessSay />
       <HomePrivacy />
       <ContactUs image="/images/home/contact.png" />
+      <Footer />
     </main>
   );
 }

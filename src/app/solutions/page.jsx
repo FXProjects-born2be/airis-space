@@ -5,6 +5,7 @@ import SolutionsHero from "./_components/SolutionsHero";
 import SolutionsLoop from "./_components/SolutionsLoop";
 import RequestPopup from "@/components/RequestPopup";
 import SolutionsCta from "./_components/SolutionsCta";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Solutions | Airis",
@@ -29,6 +30,7 @@ const Solutions = () => {
         title="<span>Have Questions?</span> Contact Us!"
       />
       <RequestPopup />
+      <Footer />
     </>
   );
 };

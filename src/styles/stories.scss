@@ -11,9 +11,12 @@ header {
   background-image: url("/images/stories/gradient.svg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding-top: rem(74);
   margin-top: -74px;
+  @media (max-width: rem(992)) {
+    background-image: url("/images/stories/gradientMob.svg");
+  }
 }
 
 .stories-hero {
@@ -293,13 +296,15 @@ header {
 
               backdrop-filter: blur(10px);
               display: flex;
-              background: #121321;
+              background: rgba(9, 9, 11, 0.20);
+
+
               @media (max-width: rem(992)) {
                 flex-direction: column;
               }
               > div {
                 padding: 24px;
-                background: rgba(9, 9, 11, 0.01);
+
                 @media (max-width: rem(992)) {
                   padding: 16px;
                 }

@@ -10,12 +10,16 @@ header {
   background-image: url("/images/home/gradient.svg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:cover;
+  @media (max-width: rem(992)) {
+    background-image: url("/images/home/gradientMob.svg");
+  }
 }
 .home-hero {
   position: relative;
   z-index: 1;
-  padding: rem(54) 0 rem(128) 0;
+  padding: rem(150) 0 rem(128) 0;
+  margin-top: -74px;
   background-image: url(/images/home/hero.png);
   background-position: center;
   background-size: cover;
@@ -23,6 +27,9 @@ header {
   display: flex;
   align-items: center;
   @media (max-width: rem(992)) {
+    
+  }
+  @media (max-width: rem(768)) {
     background-image: url(/images/home/heroMob.png);
     min-height: calc(100dvh - rem(72));
   }
@@ -241,6 +248,8 @@ header {
         font-size: rem(48);
         margin-bottom: rem(24);
         width: 100%;
+        border-bottom: 1px solid #475569;
+        padding-bottom: rem(16);
         br {
           display: none;
         }
@@ -617,7 +626,7 @@ header {
         font-size: 18px;
         width: 100%;
         border-right: 0;
-        border-bottom: 0.5px solid #475569;
+        //border-bottom: 0.5px solid #475569;
       }
     }
 

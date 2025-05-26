@@ -6,14 +6,16 @@ header {
   }
 }
 
-
 .about-us-page {
   background-image: url("/images/about/gradient.svg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding-top: rem(74);
   margin-top: -74px;
+  @media (max-width: rem(992)) {
+    background-image: url("/images/about/gradientMob.svg");
+  }
 }
 
 .about-hero {
@@ -60,18 +62,34 @@ header {
       @media (max-width: rem(992)) {
         &:first-child {
           img {
-            left: -70%;
+            left: 0;
+            max-width: 200px;
+            height: auto;
           }
         }
         &:last-child {
           img {
-            right: -70%;
+            right: 0;
+            max-width: 200px;
+            height: auto;
           }
         }
         img {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
+        }
+      }
+      @media (max-width: rem(768)) {
+        &:first-child {
+          img {
+            display: none;
+          }
+        }
+        &:last-child {
+          img {
+            display: none;
+          }
         }
       }
     }
@@ -130,6 +148,9 @@ header {
       left: 0;
       top: 30%;
       max-width: 30%;
+      @media (max-width: rem(992)) {
+        max-height: 200px;
+      }
       @media (max-width: rem(767)) {
         display: none;
       }

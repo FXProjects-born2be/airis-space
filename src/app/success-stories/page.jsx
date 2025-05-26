@@ -5,6 +5,7 @@ import AgentsHero from "./_components/AgentsHero";
 import AgentsLoop from "./_components/StoriesLoop";
 import BusinessEthics from "./_components/BusinessEthics";
 import StoriesLoop from "./_components/StoriesLoop";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Success Stories | Airis",
@@ -27,6 +28,7 @@ const page = () => {
         image="/images/stories/contact.webp"
         title="<span>Have Questions?</span> Contact Us!"
       />
+      <Footer />
     </main>
   );
 };

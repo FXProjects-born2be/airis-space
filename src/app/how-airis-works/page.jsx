@@ -3,6 +3,7 @@ import "@/styles/how-airis-works.scss";
 import ContactUs from "@/components/ContactUs";
 import HowWorksHero from "./_components/HowWorksHero";
 import HowWorkflow from "./_components/HowWorkflow";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "How Call Center AI Works | Airis",
@@ -25,6 +26,7 @@ const HowWorks = () => {
         image="/images/how/contact.png"
         title="Discover how Airis can assist your business. <span>Contact us for more information!</span>"
       />
+      <Footer />
     </main>
   );
 };

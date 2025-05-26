@@ -17,9 +17,12 @@ header {
   background-image: url("/images/industries/gradient.svg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding-top: rem(74);
   margin-top: -74px;
+  @media (max-width: rem(992)) {
+    background-image: url("/images/industries/gradientMob.svg");
+  }
 }
 
 .industries-hero {
@@ -68,7 +71,10 @@ header {
         &:first-child {
           img {
             transform: rotate(50deg);
-            left: -40%;
+            left: 0;
+            max-width: 200px;
+            height: auto;
+            top: 50px;
             //width: rem(145);
             //height: rem(125);
           }
@@ -76,9 +82,24 @@ header {
         &:last-child {
           img {
             transform: rotate(-50deg);
-            right: -40%;
+            right: 0;
+            max-width: 200px;
+            height: auto;
+            top: 50px;
             // width: rem(145);
             //height: rem(125);
+          }
+        }
+      }
+      @media (max-width: rem(768)) {
+        &:first-child {
+          img {
+            display: none;
+          }
+        }
+        &:last-child {
+          img {
+            display: none;
           }
         }
       }

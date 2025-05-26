@@ -7,13 +7,17 @@ header {
 }
 
 
+
 .standarts-page {
   background-image: url("/images/standarts/gradient.svg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding-top: rem(74);
   margin-top: -74px;
+  @media (max-width: rem(992)) {
+    background-image: url("/images/standarts/gradientMob.svg");
+  }
 }
 
 .standarts-hero {

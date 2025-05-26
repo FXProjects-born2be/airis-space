@@ -5,6 +5,7 @@ import WorkHero from "./_components/WorkHero";
 import WorkLoop from "./_components/WorkLoop";
 import WorkCta from "./_components/WorkCta";
 import JobPopup from "@/components/JobPopup";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Careers in AI Call Center Technology | Airis",
@@ -29,6 +30,7 @@ const WorkAtAiris = () => {
         title="<span>Have Questions?</span> Contact Us!"
       />
       <JobPopup />
+      <Footer />
     </main>
   );
 };

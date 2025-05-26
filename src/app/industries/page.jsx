@@ -3,6 +3,7 @@ import "@/styles/industries.scss";
 import IndustriesHero from "./_components/IndustriesHero";
 import ContactUs from "@/components/ContactUs";
 import IndustriesLoop from "./_components/IndustriesLoop";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Industries We Serve | Airis",
@@ -25,6 +26,7 @@ const Industries = () => {
         image="/images/industries/contact.png"
         title="Discover AIris solutions for your business!<span>Contact us today!</span>"
       />
+      <Footer />
     </main>
   );
 };

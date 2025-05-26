@@ -35,9 +35,10 @@ const Footer = () => {
             </ul>
             <div className="soc">
               <Link href="/terms-of-use">Terms of Use</Link>
+              {/**
               <Link href="/cookie-policy">Cookie Policy</Link>
               <Link href="/refund-policy">Refund Policy</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link> */}
             </div>
           </div>
           <div className="footer-main">

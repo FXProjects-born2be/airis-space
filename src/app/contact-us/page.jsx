@@ -2,6 +2,7 @@ import React from "react";
 import "@/styles/contact-us.scss";
 import ContactHero from "./_components/ContactHero";
 import ContactBlock from "./_components/ContactBlock";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Contact Us | Airis",
@@ -19,6 +20,7 @@ const ContactPage = () => {
   return (
     <main className="contact-us-page">
       <ContactBlock />
+      <Footer />
     </main>
   );
 };

@@ -43,10 +43,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body style={{ fontFamily: clash.style.fontFamily }}>
         <GoogleAnalytics gaId="G-MT1SRN8Y70" />
-        <Preloader />  
-        <Header />
-        {children}
-        <Footer />
+        <Preloader />
+        <div id="page">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

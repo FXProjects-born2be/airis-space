@@ -3,6 +3,7 @@ import "@/styles/standarts.scss";
 import ContactUs from "@/components/ContactUs";
 import StandartsHero from "./_components/StandartsHero";
 import StandartsLoop from "./_components/StandartsLoop";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "AI Call Center Standards | Airis",
@@ -25,6 +26,7 @@ const Standarts = () => {
         image="/images/standarts/contact.png"
         title="<span>Have Questions?</span> Contact Us!"
       />
+      <Footer />
     </main>
   );
 };
