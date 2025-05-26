@@ -16,9 +16,8 @@ const HomeHero = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Revolutionize <br />
-            Communication and <br />
-            Sales with AI-Driven <br />
+            Revolutionize Communication <br />
+            and Sales with AI-Driven <br />
             Solutions
           </motion.h1>
           <motion.h2
@@ -37,7 +36,9 @@ const HomeHero = () => {
             variants={fadeInUp}
             className="buttons"
           >
-            
+            <Link href="/how-it-works">
+              How It Works <ButtonArrow />
+            </Link>
             <Link href="/contact-us">
               Contact Us <ButtonArrow />
             </Link>

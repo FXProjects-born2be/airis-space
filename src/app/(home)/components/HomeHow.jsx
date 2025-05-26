@@ -28,6 +28,7 @@ const fadeInUp = {
 const HomeHow = () => {
   return (
     <section className="home-how">
+      
       <div className="_container">
         <div className="home-how__body">
           <motion.h2

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 const WhatBusinessSay = () => {
   return (
     <section className="home-business-say">
+      
       <div className="_container">
         <div className="home-business-say__body">
           <motion.h2

@@ -8,7 +8,6 @@ import ButtonArrow from "@/icons/ButtonArrow";
 const HomeWhatIs = () => {
   return (
     <section className="home-what">
-      <img src="/images/home/ellipse1.png" />
       <div className="_container">
         <div className="home-what__body">
           <motion.h2

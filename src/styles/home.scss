@@ -31,6 +31,9 @@
       margin: 0 0 rem(16) 0;
       @media (max-width: rem(992)) {
         font-size: rem(48);
+        br {
+          display: none;
+        }
       }
       @media (max-width: rem(767)) {
         font-size: rem(36);
@@ -45,6 +48,9 @@
       margin: 0 0 rem(40) 0;
       @media (max-width: rem(992)) {
         font-size: rem(18);
+        br {
+          display: none;
+        }
       }
     }
     .buttons {
@@ -187,19 +193,29 @@
 
 .home-benefits {
   position: relative;
+
   > img {
     position: absolute;
     z-index: 0;
-    max-width: 60%;
-    &:first-child {
-      right: 0;
-      top: -140px;
-    }
-    &:nth-child(2) {
-      left: 0;
-      bottom: -200px;
-    }
+    right: 0;
+    top: -140px;
+    display: none;
   }
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 900px;
+    height: 1300px;
+    background: #000;
+    border-radius: 960.703px;
+    background: rgba(13, 6, 222, 0.8);
+    filter: blur(500px);
+    opacity: 0.7;
+    z-index: 0;
+  }
+
   &__body {
     padding: rem(40) 0;
     //border-top: 1px solid #475569;
@@ -426,6 +442,15 @@
 }
 
 .home-how {
+  position: relative;
+  > img {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: -750px;
+    width: 100%;
+  }
+
   &__body {
     padding: rem(40) 0;
     border-left: 1px solid #475569;
@@ -519,6 +544,21 @@
 .airis-in-action {
   position: relative;
 
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 900px;
+    height: 1000px;
+    background: #000;
+    border-radius: 960.703px;
+    background: rgba(13, 6, 222, 0.8);
+    filter: blur(500px);
+    opacity: 0.7;
+    z-index: 0;
+  }
+
   > img {
     position: absolute;
     left: 0;
@@ -584,14 +624,13 @@
         max-width: 100%;
         background: transparent;
         border: none;
-        &::-webkit-media-controls-enclosure{
+        &::-webkit-media-controls-enclosure {
           background-color: #242742;
           overflow: hidden;
           border-radius: 28px;
         }
         &::-webkit-media-controls-panel {
           background-color: #242742;
-
         }
         &::-webkit-media-controls-current-time-display {
           color: #fff;
@@ -630,9 +669,6 @@
       border-radius: 4px;
     }
 
-
-    
-  
     /* volume slider “thumb” & track color (new in modern browsers) */
     .custom-audio-player::-webkit-media-controls-volume-slider {
       accent-color: #646cff;
@@ -674,14 +710,19 @@
 
 .home-business-say {
   position: relative;
-
-  > img {
+  &:before {
+    content: "";
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 950px;
+    background: #000;
+    border-radius: 960.703px;
+    background: rgba(195, 94, 245, 0.8);
+    filter: blur(500px);
+    opacity: 0.5;
     z-index: 0;
-    max-width: 60%;
   }
   &__body {
     padding: rem(40) 0;
@@ -806,6 +847,21 @@
 }
 
 .home-privacy {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 900px;
+    height: 950px;
+    background: #000;
+    border-radius: 960.703px;
+    background: rgba(13, 6, 222, 0.8);
+    filter: blur(500px);
+    opacity: 0.9;
+    z-index: 0;
+  }
   &__body {
     padding: rem(160) 0;
     border-left: 1px solid #475569;

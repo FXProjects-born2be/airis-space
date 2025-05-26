@@ -32,11 +32,16 @@ const Row = ({ index, title, description, imageSrc }) => {
         <motion.div
           className="image-wrap-inner"
           initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
         >
-          <Image alt={`benefit${index}`} src={imageSrc} width={770} height={368} />
+          <Image
+            alt={`benefit${index}`}
+            src={imageSrc}
+            width={770}
+            height={368}
+          />
         </motion.div>
       </div>
     </div>
@@ -77,8 +82,7 @@ const HomeBenefits = () => {
 
   return (
     <section className="home-benefits">
-      <img src="/images/home/ellipse2.png" />
-      <img src="/images/home/ellipse3.png" />
+      <img src="/images/home/ellips-benefits.svg" />
       <div className="_container">
         <div className="home-benefits__body">
           <motion.h2
