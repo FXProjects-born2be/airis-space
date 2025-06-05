@@ -7,6 +7,7 @@ import AboutHow from "./_components/AboutHow";
 import AboutMission from "./_components/AboutMission";
 import AboutSecond from "./_components/AboutSecond";
 import Footer from "@/components/Footer";
+import AirisInHeadlines from "../(home)/components/AirisInHeadlines";
 
 export const metadata = {
   title: "Airis Call Center Solutions | Airis",
@@ -28,6 +29,7 @@ const AboutUs = () => {
       <AboutMarketSolutions />
       <AboutHow />
       <AboutMission />
+      <AirisInHeadlines />
       <ContactUs image="/images/about/contact.png" />
       <Footer />
     </main>

@@ -9,6 +9,7 @@ import ProvenResults from "./components/ProvenResults";
 import WhatBusinessSay from "./components/WhatBusinessSay";
 import AirisInAction from "./components/AirisInAction";
 import Footer from "@/components/Footer";
+import AirisInHeadlines from "./components/AirisInHeadlines";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <HomeHow />
 
       <WhatBusinessSay />
+      <AirisInHeadlines />
       <HomePrivacy />
       <ContactUs image="/images/home/contact.png" />
       <Footer />
