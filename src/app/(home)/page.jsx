@@ -7,9 +7,9 @@ import HomePrivacy from "./components/HomePrivacy";
 import ContactUs from "@/components/ContactUs";
 import ProvenResults from "./components/ProvenResults";
 import WhatBusinessSay from "./components/WhatBusinessSay";
-import AIrisInAction from "./components/AIrisInAction";
+import AIrisInAction from "./components/AirisInAction";
 import Footer from "@/components/Footer";
-import AIrisInHeadlines from "./components/AIrisInHeadlines";
+import AIrisInHeadlines from "./components/AirisInHeadlines";
 
 export default function Home() {
   return (

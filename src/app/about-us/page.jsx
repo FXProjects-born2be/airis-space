@@ -7,7 +7,7 @@ import AboutHow from "./_components/AboutHow";
 import AboutMission from "./_components/AboutMission";
 import AboutSecond from "./_components/AboutSecond";
 import Footer from "@/components/Footer";
-import AIrisInHeadlines from "../(home)/components/AIrisInHeadlines";
+import AIrisInHeadlines from "../(home)/components/AirisInHeadlines";
 
 export const metadata = {
   title: "AIris Call Center Solutions | AIris",
