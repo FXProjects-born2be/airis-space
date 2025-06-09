@@ -8,18 +8,18 @@ import JobPopup from "@/components/JobPopup";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Careers in AI Call Center Technology | Airis",
+  title: "Careers in AI Call Center Technology | AIris",
   description:
     "Join our team and help develop AI-driven call center solutions. Explore opportunities in AI development, marketing, and business innovation.",
   openGraph: {
-    title: "Careers in AI Call Center Technology | Airis",
+    title: "Careers in AI Call Center Technology | AIris",
     description:
       "Join our team and help develop AI-driven call center solutions. Explore opportunities in AI development, marketing, and business innovation.",
     images: "https://airis.space/images/meta.png",
   },
 };
 
-const WorkAtAiris = () => {
+const WorkAtAIris = () => {
   return (
     <main className="work-at-airis-page">
       <WorkHero />
@@ -35,4 +35,4 @@ const WorkAtAiris = () => {
   );
 };
 
-export default WorkAtAiris;
+export default WorkAtAIris;

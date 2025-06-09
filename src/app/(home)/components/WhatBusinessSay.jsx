@@ -15,7 +15,7 @@ const WhatBusinessSay = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            What Businesses Say About Airis
+            What Businesses Say About AIris
           </motion.h2>
           <div className="row">
             <img className="star1" src="/images/home/star.png" />
@@ -32,7 +32,7 @@ const WhatBusinessSay = () => {
                 <h3>E-Commerce</h3>
                 <p>
                   “We were losing too many sales to abandoned carts, and our
-                  team just couldn’t keep up. Airis completely changed that—it
+                  team just couldn’t keep up. AIris completely changed that—it
                   follows up automatically, handles objections, and our
                   conversions shot up. Total game-changer!”
                 </p>
@@ -53,7 +53,7 @@ const WhatBusinessSay = () => {
                 <h3>SaaS</h3>
                 <p>
                   “Chasing trial users used to be a nightmare. Most just dropped
-                  off, and our team couldn’t follow up with everyone. Airis does
+                  off, and our team couldn’t follow up with everyone. AIris does
                   it for us now—our trial-to-paid conversions jumped, and we’re
                   not wasting time on dead leads anymore.”
                 </p>

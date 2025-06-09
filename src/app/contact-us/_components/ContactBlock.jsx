@@ -91,7 +91,7 @@ const ContactBlock = () => {
                   <Form>
                     {!status && (
                       <>
-                        <h2>Contact Airis Team</h2>
+                        <h2>Contact AIris Team</h2>
                         <p>All questions, all channels—just reach out.</p>
                         <div className="form-inner">
                           <div>

@@ -201,7 +201,7 @@ function RequestPopup() {
                       <p>
                         Your plan request has been submitted successfully. Our
                         team will review it and contact you shortly. Thank you
-                        for choosing Airis! 
+                        for choosing AIris! 
                       </p>
                     </div>
                   ) : (

@@ -24,7 +24,7 @@ const HomePrivacy = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Airis is committed to keeping your data secure and confidential. We
+            AIris is committed to keeping your data secure and confidential. We
             implement strong measures to protect sensitive information
             throughout our processes. Your data is used exclusively for
             delivering our services, following strict privacy regulations to

@@ -3,7 +3,7 @@ title: "Terms of Use"
 date: "10 February 2025"
 ---
 
-Welcome to Airis Space ("AIRIS," "we," "us," "our"). By using our services, you acknowledge and agree to the following terms. If you have any questions, please refer to the Contact Us section.
+Welcome to AIris Space ("AIRIS," "we," "us," "our"). By using our services, you acknowledge and agree to the following terms. If you have any questions, please refer to the Contact Us section.
 
 ## Service Policies
 

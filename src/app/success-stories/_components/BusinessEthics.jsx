@@ -105,7 +105,7 @@ const BusinessEthics = () => {
                 Processes
               </h3>
               <p>
-                Delegate lead engagement to Airis while your team focuses on
+                Delegate lead engagement to AIris while your team focuses on
                 closing deals.
               </p>
             </motion.div>

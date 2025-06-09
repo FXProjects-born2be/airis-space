@@ -17,7 +17,7 @@ const ContactHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Contact Airis Team
+              Contact AIris Team
             </motion.h1>
             <motion.h2
               initial="hidden"

@@ -59,7 +59,7 @@ export async function POST(request) {
     const clientEmailBody = makeBody(
       email, // Client email
       process.env.EMAIL_USER, // Sender (admin)
-      "Airis: Your Request Received", // Subject
+      "AIris: Your Request Received", // Subject
       `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>
@@ -73,12 +73,12 @@ export async function POST(request) {
                 <tr>
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Dear ${name},</h2>
-                        <p style="font-size: 16px; line-height: 19px;">Thank you for contacting Airis. We’ve successfully received your request, and our team is reviewing it. One of our representatives will get back to you shortly.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for contacting AIris. We’ve successfully received your request, and our team is reviewing it. One of our representatives will get back to you shortly.</p>
                         <p style="font-size: 16px; line-height: 19px;">If you have any additional questions in the meantime, feel free to reply to this email.</p>
                         
                        <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
                             Best regards,
-                            <br>The Airis Team
+                            <br>The AIris Team
                         </p>
                     </td>
                 </tr>
@@ -86,7 +86,7 @@ export async function POST(request) {
             <tfoot>
                 <tr>
                     <td style="background:#09090B;padding:24px;color:#F7F7F7;font-size:24px;font-weight:400;text-align:center;">
-                      Thanks for using Airis
+                      Thanks for using AIris
                   </td>
                 </tr>
             </tfoot>

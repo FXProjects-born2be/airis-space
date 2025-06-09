@@ -27,11 +27,11 @@ const AboutMission = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            At Airis, call center optimization should be simple, affordable, and
+            At AIris, call center optimization should be simple, affordable, and
             effective for businesses of all sizes. Our mission is to
             revolutionize the sales process by empowering businesses with
             cutting-edge AI technology that delivers smarter, faster, and more
-            effective solutions. Airis is more than just a tool; it’s a
+            effective solutions. AIris is more than just a tool; it’s a
             comprehensive solution designed to help enterprises streamline lead
             engagement, optimize workflows, and reduce costs while cutting
             through the market's inefficiencies. We aim to drive unparalleled

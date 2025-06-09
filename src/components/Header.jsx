@@ -76,7 +76,7 @@ const Header = () => {
       <div className={`menu-wrap ${menuOpened ? "opened" : ""}`}>
         <div className="menu">
           <nav>
-            <Link href="/how-airis-works">How Airis Works</Link>
+            <Link href="/how-airis-works">How AIris Works</Link>
             <Link href="/about-us">About Us</Link>
             <Link href="/aIris-standards">Standards</Link>
             <Link className="mob" href="/success-stories">

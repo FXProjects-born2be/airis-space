@@ -17,7 +17,7 @@ const CustomAudioPlayer = () => {
   );
 };
 
-const AirisInAction = () => {
+const AIrisInAction = () => {
   return (
     <section className="airis-in-action">
       <div className="_container">
@@ -68,4 +68,4 @@ const AirisInAction = () => {
   );
 };
 
-export default AirisInAction;
+export default AIrisInAction;

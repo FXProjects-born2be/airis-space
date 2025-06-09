@@ -6,11 +6,11 @@ import IndustriesLoop from "./_components/IndustriesLoop";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Industries We Serve | Airis",
+  title: "Industries We Serve | AIris",
   description:
     "Discover how AI-powered call center automation enhances efficiency across industries like finance, real estate, healthcare, and more.",
   openGraph: {
-    title: "Industries We Serve | Airis",
+    title: "Industries We Serve | AIris",
     description:
       "Discover how AI-powered call center automation enhances efficiency across industries like finance, real estate, healthcare, and more.",
     images: "https://airis.space/images/meta.png",

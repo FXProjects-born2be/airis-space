@@ -39,7 +39,7 @@ const AboutHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Why we crafted Airis.
+              Why we crafted AIris.
             </motion.h2>
           </div>
           <motion.div

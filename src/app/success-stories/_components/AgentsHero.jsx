@@ -38,7 +38,7 @@ const AgentsHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              See How Businesses Succeed with Airis
+              See How Businesses Succeed with AIris
             </motion.h2>
           </div>
           <motion.div

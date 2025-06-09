@@ -91,7 +91,7 @@ const StoriesLoop = () => {
                         className="results"
                       >
                         <div>
-                          <h4>Pre-Airis Metrics:</h4>
+                          <h4>Pre-AIris Metrics:</h4>
                           <ul className="metrics-list">
                             {story.metrics.map((metric, index) => (
                               <li key={index}>{metric}</li>
@@ -99,7 +99,7 @@ const StoriesLoop = () => {
                           </ul>
                         </div>
                         <div>
-                          <h4>Results After 3 Months with Airis:</h4>
+                          <h4>Results After 3 Months with AIris:</h4>
                           <ul className="results-list">
                             {story.results.map((result, index) => (
                               <li key={index}>{result}</li>
@@ -119,7 +119,7 @@ const StoriesLoop = () => {
                   variants={fadeInUp}
                   className="title"
                 >
-                  Key Performance Indicators Impacted by Airis Integration
+                  Key Performance Indicators Impacted by AIris Integration
                 </motion.h3>
                 <div className="row">
                   {story.keyPerformance.map((item, index) => (

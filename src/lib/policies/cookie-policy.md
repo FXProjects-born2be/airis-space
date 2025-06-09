@@ -4,7 +4,7 @@ title: "Cookie Policy"
 
 ## **Introduction**
 
-This Cookie Policy explains how **Airis** ("we," "us," or "our") uses cookies and similar tracking technologies on the website ([**https://airis.space/**](https://airis.space/)). Using our website, you consent to cookies as described in this policy.
+This Cookie Policy explains how **AIris** ("we," "us," or "our") uses cookies and similar tracking technologies on the website ([**https://airis.space/**](https://airis.space/)). Using our website, you consent to cookies as described in this policy.
 
 ## **What Are Cookies?**
 

@@ -71,7 +71,7 @@ export async function POST(request) {
     const adminEmailBody = makeBody(
       process.env.EMAIL_USER,
       process.env.EMAIL_USER,
-      `New Request from "Work at Airis" form`,
+      `New Request from "Work at AIris" form`,
       `
       <p><b>Full Name:</b> ${name}</p>
       <p><b>Email:</b> ${email}</p>
@@ -85,7 +85,7 @@ export async function POST(request) {
     const clientEmailBody = makeBody(
       email, // Client email
       process.env.EMAIL_USER, // Sender (admin)
-      "Airis: Your Application Received", // Subject
+      "AIris: Your Application Received", // Subject
       `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>
@@ -99,12 +99,12 @@ export async function POST(request) {
                 <tr>
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Dear ${name},</h2>
-                        <p style="font-size: 16px; line-height: 19px;">Thank you for submitting your application to Airis. We have received your details, and our HR team is reviewing your submission.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for submitting your application to AIris. We have received your details, and our HR team is reviewing your submission.</p>
                         <p style="font-size: 16px; line-height: 19px;">We will get in touch with you soon to discuss the next steps. If you have any questions in the meantime, feel free to reply to this email.</p>
                          <p style="font-size: 16px; line-height: 19px;">Thank you for your interest in joining our team!</p>
                        <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
                             Best regards,
-                            <br>The Airis Team
+                            <br>The AIris Team
                         </p>
                     </td>
                 </tr>
@@ -112,7 +112,7 @@ export async function POST(request) {
             <tfoot>
                 <tr>
                     <td style="background:#09090B;padding:24px;color:#F7F7F7;font-size:24px;font-weight:400;text-align:center;">
-                      Thanks for using Airis
+                      Thanks for using AIris
                   </td>
                 </tr>
             </tfoot>

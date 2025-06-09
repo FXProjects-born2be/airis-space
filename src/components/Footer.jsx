@@ -18,7 +18,7 @@ const Footer = () => {
                 <Link href="/aIris-standards">Standards</Link>
               </li>
               <li>
-                <Link href="/how-airis-works">How Airis Works</Link>
+                <Link href="/how-airis-works">How AIris Works</Link>
               </li>
               <li>
                 <Link href="/work-at-airis">Careers</Link>
@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="footer-copy">
             <span>Copyright © {currentYear} Alris</span>
             <div>
-              <span>Airis Global Limited</span>
+              <span>AIris Global Limited</span>
               <span>
                 2nd Floor, College House, 17 King Edwards Road, Ruislip, London,
                 United Kingdom, HA4 7AE

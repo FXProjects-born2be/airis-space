@@ -30,7 +30,7 @@ const HowWorksHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              How Airis Works
+              How AIris Works
             </motion.h1>
             <motion.h2
               initial="hidden"

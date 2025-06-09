@@ -7,16 +7,16 @@ import AboutHow from "./_components/AboutHow";
 import AboutMission from "./_components/AboutMission";
 import AboutSecond from "./_components/AboutSecond";
 import Footer from "@/components/Footer";
-import AirisInHeadlines from "../(home)/components/AirisInHeadlines";
+import AIrisInHeadlines from "../(home)/components/AIrisInHeadlines";
 
 export const metadata = {
-  title: "Airis Call Center Solutions | Airis",
+  title: "AIris Call Center Solutions | AIris",
   description:
-    "Explore the Airis mission to transform call center operations with AI. Learn how we simplify outreach, reduce costs, and enhance lead engagement.",
+    "Explore the AIris mission to transform call center operations with AI. Learn how we simplify outreach, reduce costs, and enhance lead engagement.",
   openGraph: {
-    title: "Airis Call Center Solutions | Airis",
+    title: "AIris Call Center Solutions | AIris",
     description:
-      "Explore the Airis mission to transform call center operations with AI. Learn how we simplify outreach, reduce costs, and enhance lead engagement.",
+      "Explore the AIris mission to transform call center operations with AI. Learn how we simplify outreach, reduce costs, and enhance lead engagement.",
     images: "https://airis.space/images/meta.png",
   },
 };
@@ -29,7 +29,7 @@ const AboutUs = () => {
       <AboutMarketSolutions />
       <AboutHow />
       <AboutMission />
-      <AirisInHeadlines />
+      <AIrisInHeadlines />
       <ContactUs image="/images/about/contact.png" />
       <Footer />
     </main>

@@ -8,11 +8,11 @@ import SolutionsCta from "./_components/SolutionsCta";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Solutions | Airis",
+  title: "Solutions | AIris",
   description:
     "Explore AI-driven call center solutions that automate calls, filter leads, and optimize outreach. Discover the right plan for your business.",
   openGraph: {
-    title: "Solutions | Airis",
+    title: "Solutions | AIris",
     description:
       "Explore AI-driven call center solutions that automate calls, filter leads, and optimize outreach. Discover the right plan for your business.",
     images: "https://airis.space/images/meta.png",

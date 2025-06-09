@@ -6,11 +6,11 @@ import StandartsLoop from "./_components/StandartsLoop";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "AI Call Center Standards | Airis",
+  title: "AI Call Center Standards | AIris",
   description:
     "Learn about our commitment to ethical AI, data privacy, and secure call center automation. Explore how we protect your business and customer data.",
   openGraph: {
-    title: "AI Call Center Standards | Airis",
+    title: "AI Call Center Standards | AIris",
     description:
       "Learn about our commitment to ethical AI, data privacy, and secure call center automation. Explore how we protect your business and customer data.",
     images: "https://airis.space/images/meta.png",

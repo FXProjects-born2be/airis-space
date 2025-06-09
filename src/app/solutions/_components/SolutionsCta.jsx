@@ -25,7 +25,7 @@ const SolutionsCta = () => {
           <div className="item">
             <h3>Flexible and Risk-Free</h3>
             <p>
-              Perfect for businesses wanting to explore Airis without long-term
+              Perfect for businesses wanting to explore AIris without long-term
               commitments. With this plan, there are no limits—pay only for the
               services you use.
             </p>
@@ -39,7 +39,7 @@ const SolutionsCta = () => {
             </ul>
           </div>
           <div className="item">
-            <h3>Choose this plan to try Airis!</h3>
+            <h3>Choose this plan to try AIris!</h3>
             <PlansButton position={"Pay-As-You-Go"} />
           </div>
         </div>

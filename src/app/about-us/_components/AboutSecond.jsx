@@ -17,7 +17,7 @@ const AboutSecond = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            At Airis, we are redefining the way businesses <br />
+            At AIris, we are redefining the way businesses <br />
             engage with leads and drive sales. With over 14 years <br />
             of experience managing call centers across <br />
             industries, we’ve mastered the art of combining <br />
@@ -43,7 +43,7 @@ const AboutSecond = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            At Airis, innovation meets proven expertise to help <br />
+            At AIris, innovation meets proven expertise to help <br />
             you unlock your sales potential.
           </motion.p>
         </div>

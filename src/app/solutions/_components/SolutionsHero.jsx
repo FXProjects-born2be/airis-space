@@ -30,7 +30,7 @@ const SolutionsHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Airis Solutions
+              AIris Solutions
             </motion.h1>
             <motion.h2
               initial="hidden"

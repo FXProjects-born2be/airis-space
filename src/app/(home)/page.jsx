@@ -7,22 +7,22 @@ import HomePrivacy from "./components/HomePrivacy";
 import ContactUs from "@/components/ContactUs";
 import ProvenResults from "./components/ProvenResults";
 import WhatBusinessSay from "./components/WhatBusinessSay";
-import AirisInAction from "./components/AirisInAction";
+import AIrisInAction from "./components/AIrisInAction";
 import Footer from "@/components/Footer";
-import AirisInHeadlines from "./components/AirisInHeadlines";
+import AIrisInHeadlines from "./components/AIrisInHeadlines";
 
 export default function Home() {
   return (
     <main className="home-page">
       <HomeHero />
       <HomeWhatIs />
-      <AirisInAction />
+      <AIrisInAction />
       <HomeBenefits />
       <ProvenResults />
       <HomeHow />
 
       <WhatBusinessSay />
-      <AirisInHeadlines />
+      <AIrisInHeadlines />
       <HomePrivacy />
       <ContactUs image="/images/home/contact.png" />
       <Footer />

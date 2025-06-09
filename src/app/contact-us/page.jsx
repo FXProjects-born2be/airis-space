@@ -5,11 +5,11 @@ import ContactBlock from "./_components/ContactBlock";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Contact Us | Airis",
+  title: "Contact Us | AIris",
   description:
     "Have questions or need assistance? Contact the AIris team via form, email, or phone. We’re here to help with AI-powered call center solutions.",
   openGraph: {
-    title: "Contact Us | Airis",
+    title: "Contact Us | AIris",
     description:
       "Have questions or need assistance? Contact the AIris team via form, email, or phone. We’re here to help with AI-powered call center solutions.",
     images: "https://airis.space/images/meta.png",

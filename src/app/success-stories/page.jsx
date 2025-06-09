@@ -8,13 +8,13 @@ import StoriesLoop from "./_components/StoriesLoop";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Success Stories | Airis",
+  title: "Success Stories | AIris",
   description:
-    "See how Airis helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
+    "See how AIris helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
   openGraph: {
-    title: "Success Stories | Airis",
+    title: "Success Stories | AIris",
     description:
-      "See how Airis helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
+      "See how AIris helps businesses boost conversions, recover lost leads, and optimize sales. Explore real success stories from e-commerce, SaaS, and real estate.",
     images: "https://airis.space/images/meta.png",
   },
 };

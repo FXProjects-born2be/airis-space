@@ -14,7 +14,7 @@ const ProvenResults = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Proven Results with Airis
+            Proven Results with AIris
           </motion.h2>
           <div className="row">
             <motion.div

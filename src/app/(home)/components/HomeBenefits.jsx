@@ -54,28 +54,28 @@ const HomeBenefits = () => {
       index: 1,
       title: "Work More Efficiently",
       description:
-        "Handle more calls and leads with fewer people. Airis manages repetitive tasks, so your team can focus on high-value work.",
+        "Handle more calls and leads with fewer people. AIris manages repetitive tasks, so your team can focus on high-value work.",
       imageSrc: "/images/home/benefit1.png",
     },
     {
       index: 2,
       title: "Save Money",
       description:
-        "Reduce staffing costs—Airis automates calling and lead management, cutting expenses while strengthening engagement.",
+        "Reduce staffing costs—AIris automates calling and lead management, cutting expenses while strengthening engagement.",
       imageSrc: "/images/home/benefit2.png",
     },
     {
       index: 3,
       title: "Increase Productivity",
       description:
-        "Airis filters out unqualified leads, letting your team focus on prospects ready to buy and boosting conversion rates and success.",
+        "AIris filters out unqualified leads, letting your team focus on prospects ready to buy and boosting conversion rates and success.",
       imageSrc: "/images/home/benefit3.png",
     },
     {
       index: 4,
       title: "Generate Leads Continuously",
       description:
-        "Airis runs around the clock to deliver a constant stream of qualified leads, so the team has new opportunities to follow up on.",
+        "AIris runs around the clock to deliver a constant stream of qualified leads, so the team has new opportunities to follow up on.",
       imageSrc: "/images/home/benefit4.png",
     },
   ];
