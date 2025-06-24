@@ -1,9 +1,23 @@
 ---
 title: "Terms of Use"
-date: "10 February 2025"
+date: "24 June 2025"
 ---
 
-Welcome to AIris Space ("AIRIS," "we," "us," "our"). By using our services, you acknowledge and agree to the following terms. If you have any questions, please refer to the Contact Us section.
+These Terms of Use govern your access to and use of the services provided by **Airis Global** **Limited** ("AIRIS", "we", "us", or "our"), a company specializing in AI Call Center Solutions. By accessing or using our website, located at [](https://airis.space)[https://airis.space](https://airis.space), or any of our related services, you confirm that you have read, understood, and agree to be bound by these Terms.
+
+Airis Global Limited is registered in the United Kingdom with the following details:
+
+- **Registered Address:** 2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE
+- **Operational Address:**
+- **Email:** info@airis.space
+- **Phone:** +447465236412
+- **Company Registration Number:**
+
+If you do not agree with these Terms, you must not use the Services. For questions regarding these Terms, please refer to the **Contact Us** section at the end of this document.
+
+### **Age Verification**
+
+By using the Services provided by AIRIS, you confirm that you are at least 18 years old or the legal age of majority in your jurisdiction, whichever is greater. AIRIS does not knowingly engage with or provide services to individuals under this age. If we become aware that a user does not meet the minimum age requirement, we reserve the right to suspend or terminate access to our Services immediately.
 
 ## Service Policies
 
@@ -76,18 +90,28 @@ AIRIS is not responsible for any actions taken by the client after the lead has 
 - Conversion rates after transfer, as this depends on the client’s follow-up process.
 - Any delays or interruptions beyond AIRIS’s control.
 
+### **Risk Disclaimer**
+
+By using the Services provided by AIRIS, you acknowledge and accept that all outcomes derived from AI-based interactions, including lead engagement, transfers, and automated communications, carry inherent limitations and risks.
+
+AIRIS utilizes advanced artificial intelligence to simulate human-like dialogue and decision-making processes. While the system is designed for high performance and reliability, AIRIS does not guarantee specific results, lead quality, conversion rates, or financial outcomes.
+
+Clients are solely responsible for managing transferred leads and for the ultimate results of their campaigns. AIRIS disclaims any liability for business losses, reputational damage, or other indirect consequences from reliance on AI-driven outputs.
+
+All users are advised to review and test scripts, monitor campaign performance, and apply independent judgment when integrating AIRIS into their workflows.
+
 ## Campaign & Payment Terms
 
-● Minimum Campaign Size:
+### **Minimum Campaign Size:**
 
 - Client-provided data: Minimum 2,000 leads.
 - AIRIS-provided data: Minimum 20 hot transfers.
 
-● Payment Terms:
+### **Payment Terms:**
 
 - Payments must be made upfront or according to agreed schedules before the campaign begins.
 
-● Supported Languages:
+### **Supported Languages:**
 
 - AIRIS supports all major languages and allows customization of voice, gender, and tone.
 - Voice cloning options are available for a personalized experience.
@@ -102,6 +126,32 @@ Subscriber Data
 - Data Protection: AIRIS implements reasonable security measures to safeguard Subscriber Data and Usage Data from unauthorized access or misuse, ensuring compliance with relevant data protection laws, including GDPR and CCPA.
 - Confidentiality: AIRIS treats all Subscriber Data as confidential and will not disclose it to third parties unless required to provide the Services or agreed upon by the Subscriber.
 
+## **Refund and Dispute Policies**
+
+### **Refund Policy**
+
+All payments to Airis Global Limited (“Airis”) are final and non-refundable. Once a service has been initiated—defined as receipt of payment and client data—no refund requests will be accepted under any circumstances. Submission of data constitutes the start of service delivery.
+
+If pitch revisions are included in your package, they are limited to the number specified. Any additional changes requested beyond this scope will incur extra charges as outlined in the service agreement.
+
+### **Dispute Resolution**
+
+In the event of a service-related concern, clients must notify Airis in writing within five (5) business days of the issue occurring. We will review the matter and provide a formal response within a reasonable timeframe.
+
+Disputes related to completed services, campaign results, lead quality, or subjective expectations do not qualify for financial reimbursement. Airis will, where possible, work collaboratively with the client to improve future service delivery, but no retroactive financial compensation shall be granted.
+
+All dispute communications should be directed to:
+
+- **info@airis.space**
+
+If a dispute cannot be resolved amicably, it shall be handled in accordance with the **Governing Law** section of these Terms.
+
+## **Governing Law**
+
+These Terms of Use and any dispute or claim arising out of or in connection with them (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of **England and Wales**.
+
+You agree that the courts of **England and Wales** shall have exclusive jurisdiction to settle any disputes or claims that arise out of or in connection with these Terms or their subject matter.
+
 ## Contact Us
 
 In order to resolve a complaint regarding the Services or to receive further information regarding the use of the Services, please contact us at:
@@ -110,6 +160,4 @@ In order to resolve a complaint regarding the Services or to receive further inf
 - info@airis.space
 - [https://airis.space](https://airis.space/)
 
-For details on data handling and security, refer to our privacy policy:
-
-[https://airis.space/aIris-standards](https://airis.space/aIris-standards)
+For details on data handling and security, refer to our privacy policy: [https://airis.space/aIris-standards](https://airis.space/aIris-standards)
