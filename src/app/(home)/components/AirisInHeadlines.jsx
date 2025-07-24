@@ -143,7 +143,7 @@ const AIrisInHeadlines = () => {
                   style={{ width: "129px", height: "40px" }}
                 />
               </Link>
-              <Link
+              {/**<Link
                 href="https://apnews.com/press-release/kisspr/airis-launches-ai-sales-a"
                 target="_blank"
               >
@@ -151,7 +151,7 @@ const AIrisInHeadlines = () => {
                   src="/images/home/headline8.png"
                   style={{ width: "51px", height: "60px" }}
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
